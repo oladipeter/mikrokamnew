@@ -1,4 +1,6 @@
 class MenusController < ApplicationController
+  
+  before_filter :authenticate_admin!
   # GET /menus
   # GET /menus.xml
   def index

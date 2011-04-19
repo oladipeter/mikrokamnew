@@ -29,9 +29,13 @@ GEM
       activesupport (= 3.0.6)
     activesupport (3.0.6)
     arel (2.0.9)
+    bcrypt-ruby (2.1.4-x86-mingw32)
     builder (2.1.2)
     ckeditor (3.4.2.pre)
       mime-types (>= 1.16)
+    devise (1.1.rc2)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 0.10.7)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     i18n (0.5.0)
@@ -69,12 +73,15 @@ GEM
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.26)
+    warden (0.10.7)
+      rack (>= 1.0.0)
 
 PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
   ckeditor (= 3.4.2.pre)
+  devise (= 1.1.rc2)
   paperclip (~> 2.3)
   rails (= 3.0.6)
   sqlite3
