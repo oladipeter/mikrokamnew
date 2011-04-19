@@ -1,0 +1,10 @@
+<h1><%= raw @index_content.title %></h1>
+<%= raw @index_content.content %>
+
+<% content_for :menu do %>
+  <ul class="menu">
+    <% @menus.each do |menu| %>
+      <li class="button"><%= link_to "#{menu.title}", show_menu_content_home_path(menu.content) %></li>
+    <% end %>
+  </ul>
+<% end %>

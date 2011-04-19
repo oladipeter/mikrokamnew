@@ -1,18 +1,227 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mikrokamnew</title>
+  <title>Mikrokam</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag :ckeditor %>
   <%= csrf_meta_tag %>
+  <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
 </head>
 <body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<div id="main">
 
-<%= yield %>
+    <div id="block_1">
+      <div class="container">
+        <div class="span-8 prepend-16"> <!-- 24 oszlopos ami ele berak 16 ures oszlopot! -->
+          <div class="content">
+            <% if admin_signed_in? %>
+            <b>Most éppen be vagy lépve adminisztrátorként!</b>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="block_2">
+      <div class="container">
+        <div class="span-8"><%= image_tag("logo.jpg") %></div>
+        <div class="span-16 last">
+          <%= yield :menu %>
+        </div>
+      </div>
+    </div>
+
+    <div id="block_4">
+      <div class="container">
+        <div id="big_pic">
+          <div class="span-24" id="text_container">
+
+            <!-- Slideshow here! -->
+
+            <!-- "previous slide" button -->
+            <a class="backward">prev</a>
+
+            <!-- container for the slides -->
+            <div class="images">
+
+                <!-- first slide -->
+                <div>
+                  <h3>Broadcast minőségű TV közvetítés</h3>
+                  <p>
+                   <%= image_tag("kep_1.png") %>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.
+                  </p>
+                </div>
+
+                <!-- second slide -->
+                <div>
+                  <h3>Önkormányzati közvetítés HD minőségben!</h3>
+                  <p>
+                   <%= image_tag("kep_2.png") %>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.
+                  </p>
+                </div>
+
+                <!-- third slide -->
+                <div>
+                  <h3>Kövesse élőben a hivatal munkáját az interneten!</h3>
+                  <p>
+                   <%= image_tag("kep_3.png") %>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.
+                  </p>
+                </div>
+
+            </div>
+
+            <!-- "next slide" button -->
+            <a class="forward">next</a>
+
+            <!-- the tabs -->
+            <div class="slidetabs">
+                <%= link_to "#"%>
+                <%= link_to "#"%>
+                <%= link_to "#"%>
+            </div>
+
+            <br/><br/>
+
+            <div class="play">PLAY</div>
+            <div class="stop">STOP</div>
+
+            <!-- Slideshow here! -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="block_5">
+      <div class="container">
+        <div class="span-16" id="block5_image_left">
+          <div class="title">
+            <h1>Professzionális megoldások</h1>
+          </div>
+          <div class="text">
+            Együttműködés a <b>MikroVoks</b> Szavazatszámláló és Konferencia rendszerrel, automatikus fokuszállás az aktuálisan hozzászóló képviselőre!
+            <div class="button"><%= link_to "Bővebb információ"%></div>
+          </div>
+        </div>
+        <div class="span-8 last" id="block5_image_right">
+           <div class="title">
+            <h1>Szolgáltatások</h1>
+            <ul class="services">
+              <li><b>Tanítható</b> kamerák</li>
+              <li><b>Költséghatékony</b></li>
+              <li><b>HD minőség</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="block_6">
+      <div class="container prepend-top">
+        <div class="span-16">
+          <div id="user_nav">
+          </div>
+          <div id="message">
+            <% flash.each do |name, msg| %>
+              <%= content_tag :div, msg, :id => "flash_#{name}" %>
+            <% end %>
+          </div>
+          <div class="text">
+            <%= yield %>
+          </div>
+
+          <!-- Jquery Tools ** TABS **   -->
+
+            <div id="tabs_div">
+
+                <ul class="tabs">
+                    <li><%= link_to "Hardver igény", "#"%></li>
+                    <li><%= link_to "Operációs rendszer", "#"%></li>
+                    <!-- <li><%= link_to "Tab3", "#"%></li> -->
+                </ul>
+
+                <!-- tab "panes" -->
+                <div class="panes">
+                    <div>Ez egy régóta elfogadott tény, miszerint egy olvasót zavarja az olvasható szöveg miközben a szöveg elrendezését nézi. A Lorem Ipsum használatának lényege, hogy többé-kevésbé rendezettebb betûket tartalmaz, ellentétben a Tartalom helye, Tartalom helye-féle megoldással. Sok desktop szerkesztõ és weboldal szerkesztõ használja a Lorem Ipsum-ot mint alapbeállítású szövegmodellt, és egy keresés a lorem ipsum-ra sok félkész weboldalt fog ere</div>
+                    <div>Ez egy régóta elfogadott tény, miszerint egy olvasót zavarja az olvasható szöveg miközben a szöveg elrendezését nézi. A Lorem Ipsum használatának lényege, hogy többé-kevésbé rendezettebb betûket tartalmaz, ellentétben a Tartalom helye, Tartalom helye-féle megoldással. Sok desktop szerkesztõ és weboldal szerkesztõ használja a Lorem Ipsum-ot..</div>
+                    <div>Third tab content...</div>
+                </div>
+
+                <%#*<script>%>
+                   <%#*$("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});%>
+                <%#*</script>%>
+
+            </div>
+
+        </div>
+        <div class="span-8 last">
+          <div class="right_text">
+            <div id="advice">
+              <%= yield :advice %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="block_7">
+      <div class="container">
+        <div class="span-24">
+          <div class="tovabbi_termekek">
+            <h1>Cégünk további termékei</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.
+          </div>
+          <div class="sor">
+            <div class="span-8">
+              <div class="text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+              </div>
+            </div>
+            <div class="span-8">
+              <div class="text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+              </div>
+            </div>
+            <div class="span-8 last">
+              <div class="text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+              </div>
+            </div>
+
+            <!-- Kovetkezo 3 termek megjelenitese -->
+
+            <div class="span-8">
+              <div class="text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+              </div>
+            </div>
+            <div class="span-8">
+              <div class="text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+              </div>
+            </div>
+            <div class="span-8 last">
+              <div class="text">
+              Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="block_8">
+      <div class="container">
+        <div class="span-24">
+          <div class="footer">Copyright © 2011 Globomax Kft. - Minden jog fenntartva.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 </html>

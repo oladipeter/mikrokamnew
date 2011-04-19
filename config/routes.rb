@@ -1,4 +1,8 @@
-Mikrokamnew::Application.routes.draw do
+Mikrokamnew::Application.routes.draw do  
+  get "home/index"
+
+  match 'admin' => 'admin#index'
+
   devise_for :admins           
 
   resources :menus
@@ -6,6 +10,16 @@ Mikrokamnew::Application.routes.draw do
   resources :contents
 
   resources :tests
+
+  scope "/admin" do
+    resources :menus, :contents
+  end
+
+  resources :home do
+    member do
+      get 'show_menu_content'
+    end
+  end  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -56,7 +70,7 @@ Mikrokamnew::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "contents#index"
+  root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 

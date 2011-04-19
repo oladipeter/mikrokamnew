@@ -1,6 +1,8 @@
 class ContentsController < ApplicationController
 
   before_filter :authenticate_admin!
+  layout 'admin'
+  
   # GET /contents
   # GET /contents.xml
   def index
@@ -43,43 +45,42 @@ class ContentsController < ApplicationController
   # POST /contents.xml
   def create
     @content = Content.new(params[:content])
-
-    respond_to do |format|
+    
       if @content.save
-        format.html { redirect_to(@content, :notice => 'Content was successfully created.') }
-        format.xml  { render :xml => @content, :status => :created, :location => @content }
+        redirect_to contents_path, :notice => 'Content was successfully created.'
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @content.errors, :status => :unprocessable_entity }
-      end
-    end
+        render :action => "new"        
+      end    
   end
 
   # PUT /contents/1
   # PUT /contents/1.xml
   def update
     @content = Content.find(params[:id])
-
-    respond_to do |format|
+    
       if @content.update_attributes(params[:content])
-        format.html { redirect_to(@content, :notice => 'Content was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to contents_path, :notice => 'Content was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @content.errors, :status => :unprocessable_entity }
+        render :action => "edit"      
       end
-    end
+    
   end
 
   # DELETE /contents/1
   # DELETE /contents/1.xml
   def destroy
     @content = Content.find(params[:id])
-    @content.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(contents_url) }
-      format.xml  { head :ok }
+    if (params[:id] == '1')
+      redirect_to contents_path, :notice => 'Cannot delete this item (id=1)'
+    else
+      #redirect_to contents_path, :notice => 'deleted'
+      render :text => "#{params[:id]}"
+#      @content.destroy
+#      respond_to do |format|
+#        format.html { redirect_to(contents_url) }
+#        format.xml  { head :ok }
+#      end
     end
   end
+
 end

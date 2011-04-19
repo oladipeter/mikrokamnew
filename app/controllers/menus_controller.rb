@@ -1,6 +1,7 @@
 class MenusController < ApplicationController
   
   before_filter :authenticate_admin!
+  layout 'admin'
   # GET /menus
   # GET /menus.xml
   def index
@@ -44,31 +45,26 @@ class MenusController < ApplicationController
   def create
     @menu = Menu.new(params[:menu])
 
-    respond_to do |format|
+    
       if @menu.save
-        format.html { redirect_to(@menu, :notice => 'Menu was successfully created.') }
-        format.xml  { render :xml => @menu, :status => :created, :location => @menu }
+        redirect_to menus_path, :notice => 'Menu was successfully created.'        
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @menu.errors, :status => :unprocessable_entity }
+        render :action => "new"        
       end
-    end
+    
   end
 
   # PUT /menus/1
   # PUT /menus/1.xml
   def update
     @menu = Menu.find(params[:id])
-
-    respond_to do |format|
+    
       if @menu.update_attributes(params[:menu])
-        format.html { redirect_to(@menu, :notice => 'Menu was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to menus_path, :notice => 'Menu was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @menu.errors, :status => :unprocessable_entity }
+        render :action => "edit"        
       end
-    end
+
   end
 
   # DELETE /menus/1

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mikrokam</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag :ckeditor %>
+  <%= csrf_meta_tag %>
+  <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+</head>
+<body>
+
+<div id="main">
+
+    <div id="block_1">
+      <div class="container">
+        <div class="span-8 prepend-16"> <!-- 24 oszlopos ami ele berak 16 ures oszlopot! -->
+          <div class="content">            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="block_2">
+      <div class="container">
+        <div class="span-8"><%= image_tag("logo.jpg") %></div>
+        <div class="span-16 last">
+          &nbsp;
+        </div>
+      </div>
+    </div>       
+
+    <div id="block_6">
+      <div class="container prepend-top">
+        <div class="span-16">          
+          <div id="message">
+            <% flash.each do |name, msg| %>
+              <%= content_tag :div, msg, :id => "flash_#{name}" %>
+            <% end %>
+          </div>
+          <div class="text">
+            <%= yield %>          
+          </div>
+        </div>
+        <div class="span-8 last">
+          <div class="right_text">
+            <% if admin_signed_in? %>
+              <div id="admin_info">Admin info :</div>
+              Email : <%= current_admin.email %><br/>
+              Beléptél : <%= current_admin.current_sign_in_at %><br/>              
+              IP : <%= current_admin.current_sign_in_ip %><br/>
+              <%= link_to "Adminisztrátori fiók szerkesztése!" %>
+              <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>              
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="block_8">
+      <div class="container">
+        <div class="span-24">
+          <div class="footer">Copyright © 2011 Globomax Kft. - Minden jog fenntartva.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
