@@ -24,7 +24,8 @@
                   <h3><%= slide.title %></h3>
                   <p>
                    <%= image_tag("kep_#{slide.image_tag}.png")   %>
-                   <%= slide.description %>
+                   <% truncated_description = truncate("#{slide.description}", :length => 450, :omission => "...") %>
+                   <%= truncated_description %>
                   </p>
                 </div>
               <% end %>
@@ -53,6 +54,9 @@
 <% content_for :advice do %>
     <% @advices.each do |advice| %>
         <div class="advice_title"><%= advice.title %></div>
-        <div class="advice_content"><%= raw advice.description %></div>
+        <div class="advice_content">
+          <% truncated_advice = truncate("#{advice.description}", :length => 150, :omission => "...") %>
+          <%= raw truncated_advice %>
+        </div>
     <% end %>
 <% end %>

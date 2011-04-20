@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    color: #CB6E06;
+    color: #333;
     font-family: Georgia, sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -111,12 +111,12 @@ a, a:hover, a:link, a:visited {
     height: 200px;
     background-image: url('../images/block_5_background.jpg');
     background-repeat: repeat-x;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #bbb;
 }
 
 #block_6 {
     height: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 30px;
 }
 
@@ -330,24 +330,33 @@ ul.services {
 /* BLOCK 7*/
 
 #block_7 {
+    background-color: #015270;
     height: auto;
     font-size: 15px;
     padding-bottom: 30px;
-    border-top: 1px solid #d1d1d1;
-    border-bottom: 1px solid #d1d1d1;
+    /*border-top: 1px solid #d1d1d1;*/
+    /*border-bottom: 1px solid #d1d1d1;*/
+    color: #fff;
+}
+
+#block_7 h1 {
+  color: #fff;
 }
 
 #block_7 .text {
+    color: #333;
     background-color: #fff;
     margin-bottom: 10px;
+    font-size: 11px;
 }
 
 /* BLOCK 8*/
 
 #block_8 {
-    color: #fff;
+    color: #333;
     font-weight: bold;
     padding: 10px 0px 10px 0px;
+    background-color: #fff;
 }
 
 .footer {
@@ -724,5 +733,12 @@ form#admin_new input {
 
 #block_6 #flash_alert {
   margin-bottom: 10px;
+}
+
+.images p {
+  font-size: 18px;
+  font-family: Georgia;
+  line-height: 22px;
+  word-spacing: 0px;
 }
 
