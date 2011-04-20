@@ -41,6 +41,9 @@ module Mikrokamnew
 
     #ckeditor init
     config.autoload_paths += %W( #{config.root}/app/models/ckeditor )
+    
+    #jquery
+    config.action_view.javascript_expansions[:defaults] = %w(jquery rails jquery.tools.min)
 
   end
 end

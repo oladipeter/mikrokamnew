@@ -8,3 +8,44 @@
 
 <h1><%= @content.title %></h1>
 <%= raw @content.content %>
+
+<% content_for :slider do %>
+
+  <!-- Slideshow here! -->
+
+            <!-- "previous slide" button -->
+            <a class="backward">prev</a>
+
+            <!-- container for the slides -->
+            <div class="images">
+
+              <% @slides.each do |slide| %>
+                <div>
+                  <h3><%= slide.title %></h3>
+                  <p>
+                   <%= image_tag("kep_#{slide.image_tag}.png")   %>
+                   <%= slide.description %>
+                  </p>
+                </div>
+              <% end %>
+
+            </div>
+
+            <!-- "next slide" button -->
+            <a class="forward">next</a>
+
+            <!-- the tabs -->
+            <div class="slidetabs">
+                <%= link_to "#"%>
+                <%= link_to "#"%>
+                <%= link_to "#"%>
+            </div>
+
+            <br/><br/>
+
+            <div class="play">PLAY</div>
+            <div class="stop">STOP</div>
+
+            <!-- Slideshow here! -->
+
+<% end %>

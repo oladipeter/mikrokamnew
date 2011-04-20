@@ -1,9 +1,14 @@
 class HomeController < ApplicationController
 
-  before_filter :menu_object_init, :content_object_init  
+  before_filter :menu_object_init, :content_object_init, :show_all_slide
 
   def index
    @index_content = Content.find_by_id(1)
+  end
+
+  def show_all_slide
+   @slider = Slider.new
+   @slides = Slider.all
   end
 
   def menu_object_init #on the layout

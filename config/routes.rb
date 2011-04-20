@@ -1,4 +1,6 @@
 Mikrokamnew::Application.routes.draw do  
+  resources :sliders
+
   get "home/index"
 
   match 'admin' => 'admin#index'

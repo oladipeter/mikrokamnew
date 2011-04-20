@@ -37,56 +37,7 @@
         <div id="big_pic">
           <div class="span-24" id="text_container">
 
-            <!-- Slideshow here! -->
-
-            <!-- "previous slide" button -->
-            <a class="backward">prev</a>
-
-            <!-- container for the slides -->
-            <div class="images">
-
-                <!-- first slide -->
-                <div>
-                  <h3>Broadcast minőségű TV közvetítés</h3>
-                  <p>
-                   <%= image_tag("kep_1.png") %>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.
-                  </p>
-                </div>
-
-                <!-- second slide -->
-                <div>
-                  <h3>Önkormányzati közvetítés HD minőségben!</h3>
-                  <p>
-                   <%= image_tag("kep_2.png") %>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.
-                  </p>
-                </div>
-
-                <!-- third slide -->
-                <div>
-                  <h3>Kövesse élőben a hivatal munkáját az interneten!</h3>
-                  <p>
-                   <%= image_tag("kep_3.png") %>A Lorem Ipsum részleteinek sok változata elérhetõ, de a legtöbbet megváltoztatták egy kis humorral és véletlenszerûen kiválasztott szavakkal, amik kicsit sem teszik értelmessé. Ha használni készülsz a Lorem Ipsumot, biztosnak kell lenned abban, hogy semmi kínos sincs elrejtve a szöveg közepén. Az összes internetes Lorem Ipsum készítõ igyekszik elõre beállított részleteket ismételni a szükséges mennyiségben, ezzel téve az internet egyetlen igazi Lorem Ipsum generátorává ezt az oldalt. Az oldal körülbelül 200 latin szót használ, egy maroknyi modell-mondatszerkezettel így téve a Lorem Ipsumot elfogadhatóvá. Továbbá az elkészült Lorem Ipsum humortól, ismétlõdéstõl vagy értelmetlen szavaktól mentes.
-                  </p>
-                </div>
-
-            </div>
-
-            <!-- "next slide" button -->
-            <a class="forward">next</a>
-
-            <!-- the tabs -->
-            <div class="slidetabs">
-                <%= link_to "#"%>
-                <%= link_to "#"%>
-                <%= link_to "#"%>
-            </div>
-
-            <br/><br/>
-
-            <div class="play">PLAY</div>
-            <div class="stop">STOP</div>
-
-            <!-- Slideshow here! -->
+            <%= yield :slider %>           
 
           </div>
         </div>
@@ -102,7 +53,7 @@
           </div>
           <div class="text">
             Együttműködés a <b>MikroVoks</b> Szavazatszámláló és Konferencia rendszerrel, automatikus fokuszállás az aktuálisan hozzászóló képviselőre!
-            <div class="button"><%= link_to "Bővebb információ"%></div>
+            <div class="button"><%= link_to "Bővebb információ", home_index_path %></div>
           </div>
         </div>
         <div class="span-8 last" id="block5_image_right">
@@ -149,9 +100,9 @@
                     <div>Third tab content...</div>
                 </div>
 
-                <%#*<script>%>
-                   <%#*$("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});%>
-                <%#*</script>%>
+                <script>
+                   $("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});
+                </script>
 
             </div>
 
