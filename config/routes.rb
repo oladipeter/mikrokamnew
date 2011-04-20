@@ -1,4 +1,6 @@
 Mikrokamnew::Application.routes.draw do  
+  resources :advices
+
   resources :sliders
 
   get "home/index"
