@@ -32,6 +32,8 @@
       </div>
     </div>
 
+  <!-- Jquery Tools ** SLIDER **   -->
+
     <div id="block_4">
       <div class="container">
         <div id="big_pic">
@@ -42,7 +44,9 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
+
+  <!-- Jquery Tools ** SLIDER **   -->
 
     <div id="block_6">
       <div class="container prepend-top">
@@ -61,26 +65,13 @@
           <!-- Jquery Tools ** TABS **   -->
 
             <div id="tabs_div">
-
-                <ul class="tabs">
-                    <li><%= link_to "Hardver igény", "#", :class => "m" %></li>
-                    <li><%= link_to "Hardver igény", "#", :class => "m" %></li>
-                    <li><%= link_to "Hardver igény", "#", :class => "m" %></li>
-                    
-                </ul>
-
-                <!-- tab "panes" -->
-                <div class="panes">
-                    <div>Ez egy régóta elfogadott tény, miszerint egy olvasót zavarja az olvasható szöveg miközben a szöveg elrendezését nézi. A Lorem Ipsum használatának lényege, hogy többé-kevésbé rendezettebb betûket tartalmaz, ellentétben a Tartalom helye, Tartalom helye-féle megoldással. Sok desktop szerkesztõ és weboldal szerkesztõ használja a Lorem Ipsum-ot mint alapbeállítású szövegmodellt, és egy keresés a lorem ipsum-ra sok félkész weboldalt fog ere</div>
-                    <div>Ez egy régóta elfogadott tény, miszerint egy olvasót zavarja az olvasható szöveg miközben a szöveg elrendezését nézi. A Lorem Ipsum használatának lényege, hogy többé-kevésbé rendezettebb betûket tartalmaz, ellentétben a Tartalom helye, Tartalom helye-féle megoldással. Sok desktop szerkesztõ és weboldal szerkesztõ használja a Lorem Ipsum-ot..</div>
-                    <div>Third tab content...</div>
-                </div>
-
-                <script>
-                   $("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});
-                </script>
-
+                <%= yield :tab %>
+              <script>
+                 $("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});
+              </script>
             </div>
+
+          <!-- Jquery Tools ** TABS **   -->
 
           <div id="hatterem">
             &nbsp;

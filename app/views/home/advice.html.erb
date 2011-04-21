@@ -6,9 +6,6 @@
   </ul>
 <% end %>
 
-<h1><%= @content.title %></h1>
-<%= raw @content.content %>
-
 <h1><%= @advice.title %></h1>
 <%= raw @advice.description %>
 
@@ -57,21 +54,9 @@
 <% content_for :right do %>
 
     <h1>Főmenü</h1>
-    <% @contents.each do |content| %>
-      <div class="advice_title"><%= link_to"#{content.title}", content_home_path(content) %></div>
-      <div class="advice_content">
-        <% truncated_content = truncate("#{content.content}", :length => 200, :omission => "...") %>
-        <%= raw truncated_content %>
-      </div>
-    <% end %>
+    <%= render :partial => "shared/content", :collection => @contents %>
 
     <h1>Hírek, aktualitások</h1>
-    <% @advices.each do |advice| %>
-        <div class="advice_title"><%= link_to "#{advice.title}", advice_home_path(advice) %></div>
-        <div class="advice_content">
-          <% truncated_advice = truncate("#{advice.description}", :length => 200, :omission => "...") %>
-          <%= raw truncated_advice %>
-        </div>
-    <% end %>
+    <%= render :partial => "shared/advice", :collection => @advices %>
 
 <% end %>

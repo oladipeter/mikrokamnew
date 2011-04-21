@@ -548,6 +548,7 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
 }
 
 .panes div {
+    font-size: 11px;
     margin-right: 30px;
     padding: 10px;
     border: 1px solid #ccc;

@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  before_filter :menu_object_init, :content_object_init, :show_all_slide, :advice_object_init
+  before_filter :menu_object_init, :content_object_init, :show_all_slide, :advice_object_init, :tab_object_init
 
   def index
    @index_content = Content.find_by_id(1)
@@ -8,7 +8,7 @@ class HomeController < ApplicationController
 
   def show_all_slide
    @slider = Slider.new
-   @slides = Slider.all
+   @slides = Slider.find(:all)
   end
 
   def advice_object_init
@@ -24,7 +24,12 @@ class HomeController < ApplicationController
   def content_object_init #on the layout
     @content = Content.new
     @contents = Content.find(:all)
-  end 
+  end
+
+  def tab_object_init #on the layout
+    @tab = Tab.new
+    @tabs = Tab.find(:all)
+  end
 
   def content
     @content = Content.find(params[:id])    

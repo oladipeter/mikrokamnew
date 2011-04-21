@@ -1,4 +1,6 @@
 Mikrokamnew::Application.routes.draw do  
+  resources :tabs
+
   resources :advices
 
   resources :sliders
