@@ -1,13 +1,16 @@
-<h1><%= raw @index_content.title %></h1>
-<%= raw @index_content.content %>
-
 <% content_for :menu do %>
   <ul class="menu">
     <% @menus.each do |menu| %>
-      <li class="button"><%= link_to "#{menu.title}", content_home_path(menu.content) %></li>
+      <li class="button"><%= link_to "#{menu.title}", content_home_path(menu.content) %></li>      
     <% end %>
   </ul>
 <% end %>
+
+<h1><%= @content.title %></h1>
+<%= raw @content.content %>
+
+<h1><%= @advice.title %></h1>
+<%= raw @advice.description %>
 
 <% content_for :slider do %>
 
@@ -51,12 +54,24 @@
 
 <% end %>
 
-<% content_for :advice do %>
+<% content_for :right do %>
+
+    <h1>Főmenü</h1>
+    <% @contents.each do |content| %>
+      <div class="advice_title"><%= link_to"#{content.title}", content_home_path(content) %></div>
+      <div class="advice_content">
+        <% truncated_content = truncate("#{content.content}", :length => 150, :omission => "...") %>
+        <%= raw truncated_content %>
+      </div>
+    <% end %>
+     
+    <h1>Hírek</h1>
     <% @advices.each do |advice| %>
-        <div class="advice_title"><%= advice.title %></div>
-        <div class="advice_content">
+        <div class="advice_title"><%= link_to "#{advice.title}", advice_home_path(advice) %></div>
+        <div class="advice_content">          
           <% truncated_advice = truncate("#{advice.description}", :length => 150, :omission => "...") %>
           <%= raw truncated_advice %>
         </div>
     <% end %>
+
 <% end %>

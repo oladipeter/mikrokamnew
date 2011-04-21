@@ -21,7 +21,8 @@ Mikrokamnew::Application.routes.draw do
 
   resources :home do
     member do
-      get 'show_menu_content'
+      get 'content'
+      get 'advice'
     end
   end  
 

@@ -26,8 +26,12 @@ class HomeController < ApplicationController
     @contents = Content.find(:all)
   end 
 
-  def show_menu_content
-    @content = Content.find(params[:id])
-  end 
+  def content
+    @content = Content.find(params[:id])    
+  end
+
+  def advice
+    @advice = Advice.find(params[:id])
+  end
 
 end

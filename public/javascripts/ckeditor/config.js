@@ -47,7 +47,7 @@ CKEDITOR.editorConfig = function( config )
         ['Source'],
         ['Cut','Copy','Paste','PasteText','PasteFromWord',],
         ['Bold','Italic','Underline','Strike'],
-        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Format'],
         ['Link','Unlink'],
         ['Image','Flash']
     ];
