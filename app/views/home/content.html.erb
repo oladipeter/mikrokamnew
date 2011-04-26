@@ -86,7 +86,7 @@
   <!-- tab "panes" -->
   <div class="panes">
     <% @tabs.each do |tab| %>
-      <div><%= tab.description %></div>
+      <div><%= raw tab.description %></div>
     <% end %>
   </div>
   

@@ -40,6 +40,15 @@ CKEDITOR.editorConfig = function( config )
         ['Image','Embed','Flash','Attachment','Table','HorizontalRule','Smiley','SpecialChar','PageBreak']
     ];
 
+  config.toolbar = 'slim';
+
+  config.toolbar_slim =
+    [
+        ['PasteText'],
+        ['Bold','Italic','Underline'],
+        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Format','Image']
+    ];
+
   config.toolbar = 'light';
 
   config.toolbar_light =

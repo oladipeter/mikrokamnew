@@ -3,7 +3,8 @@ class HomeController < ApplicationController
   before_filter :menu_object_init, :content_object_init, :show_all_slide, :advice_object_init, :tab_object_init
 
   def index
-   @index_content = Content.find_by_id(1)
+   redirect_to content_home_path(1)
+   #@index_content = Content.find_by_id(1)
   end
 
   def show_all_slide

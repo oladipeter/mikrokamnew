@@ -86,11 +86,8 @@
   <!-- tab "panes" -->
   <div class="panes">
     <% @tabs.each do |tab| %>
-      <div><%= tab.description %></div>
+      <div><%= raw tab.description %></div>
     <% end %>
   </div>
-
-  <script type="javascript" >
-     $("ul.tabs").tabs("div.panes > div", {effect: 'fade', fadeInSpeed: 400});
-  </script>
+  
 <% end %>

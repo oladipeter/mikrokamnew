@@ -2,8 +2,7 @@
 
 <table>
   <tr>
-    <th>Title</th>
-    <th>Description</th>
+    <th>Title</th>    
     <th></th>
     <th></th>
     <th></th>
@@ -11,9 +10,7 @@
 
 <% @tabs.each do |tab| %>
   <tr>
-    <td><%= tab.title %></td>
-    <td><%= tab.description %></td>
-    <td><%= link_to 'Show', tab %></td>
+    <td><%= tab.title %></td>        
     <td><%= link_to 'Edit', edit_tab_path(tab) %></td>
     <td><%= link_to 'Destroy', tab, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

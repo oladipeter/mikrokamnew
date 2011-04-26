@@ -46,19 +46,23 @@
           <div class="right_text">
             <% if admin_signed_in? %>
               <div id="admin_info">Admin info :</div>
-              Email : <%= current_admin.email %><br/>
+              Email : <b><%= current_admin.email %></b><br/>
               Beléptél : <%= current_admin.current_sign_in_at %><br/>              
-              IP : <%= current_admin.current_sign_in_ip %><br/>
+              IP : <%= current_admin.current_sign_in_ip %><br/><br/>
               <%= link_to "Adminisztrátori fiók szerkesztése!" %>
-              <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>              
+              <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>
+
+              <br/>
+
+              <h1>Edit your contents</h1>
+
+              <%= link_to "Menu items", menus_path %>
+              <%= link_to "Content items", contents_path%>
+              <%= link_to "Slider items", sliders_path%>
+              <%= link_to "Advice items", advices_path%>
+              <%= link_to "Tab items", tabs_path%>
+
             <% end %>
-
-            <h1>Szolgáltatások</h1>
-
-            <%= link_to "Edit menu items", menus_path %><br/><br/>
-            <%= link_to "Edit content items", contents_path%><br/><br/>
-            <%= link_to "Edit slider items", sliders_path%><br/><br/>
-            <%= link_to "Edit advice items", advices_path%><br/><br/>
 
           </div>
         </div>
