@@ -1,4 +1,5 @@
 Mikrokamnew::Application.routes.draw do  
+  
   resources :tabs
 
   resources :advices
@@ -9,7 +10,7 @@ Mikrokamnew::Application.routes.draw do
 
   match 'admin' => 'admin#index'
 
-  devise_for :admins           
+  devise_for :admins  
 
   resources :menus
 
@@ -26,7 +27,12 @@ Mikrokamnew::Application.routes.draw do
       get 'content'
       get 'advice'
     end
-  end  
+  end
+  
+  # ADMIN
+
+  resources :admins
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
