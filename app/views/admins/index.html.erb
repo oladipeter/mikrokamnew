@@ -1,6 +1,4 @@
-<h1>Üdvözöllek Admin!</h1>
-
-<!-- MENU TABLE -->
+<!-- TARTALOM TABLE -->
 
 <h2>Tartalom szerkesztése</h2>
 
@@ -11,21 +9,42 @@
     </tr>
   </thead>
 
-  <tbody>    
+  <tbody>
     <tr>
-      <td><%= link_to "Menüpontok", menus_path %></td>
-    </tr>
-    <tr>
-      <td><%= link_to "Tartalom", contents_path%></td>
-    </tr>
+      <td><%= link_to "Tartalom módosítása", contents_path%></td>
+    </tr>        
     <tr>
       <td><%= link_to "Slider a fejlécben", sliders_path%></td>
     </tr>
     <tr>
-      <td><%= link_to "Hírek", advices_path%></td>
+      <td><%= link_to "Hírek módosítása", advices_path%></td>
     </tr>
     <tr>
-      <td><%= link_to "Információk", tabs_path%></td>
+      <td><%= link_to "Információk módosítása", tabs_path%></td>
+    </tr>
+  </tbody>
+
+</table>
+
+<!-- END TARTALOM TABLE -->
+
+<br/><br/>
+
+<!-- MENU TABLE -->
+
+<h2>Menüpontok szerkesztése</h2>
+
+<table id="box-table-a">
+
+  <thead>
+    <tr>
+      <th scope="col">Szerkeszthető felületek :</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= link_to "Menüpontok módosítása", menus_path %></td>
     </tr>
   </tbody>
 

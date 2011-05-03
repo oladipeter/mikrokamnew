@@ -1,22 +1,27 @@
-<h1>Listing tabs</h1>
+<h1>Tabok listája</h1>
 
-<table>
-  <tr>
-    <th>Title</th>    
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="add_new">
+  <%= link_to 'Új tab felvitele', new_tab_path %>
+  <%= link_to 'Vissza', admins_path %>
+</div>
 
-<% @tabs.each do |tab| %>
-  <tr>
-    <td><%= tab.title %></td>        
-    <td><%= link_to 'Edit', edit_tab_path(tab) %></td>
-    <td><%= link_to 'Destroy', tab, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Cím</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tabs.each do |tab| %>
+      <tr>
+        <td><%= tab.title %></td>
+        <td><%= link_to 'Módosít', edit_tab_path(tab) %></td>
+        <td><%= link_to 'Töröl', tab, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
 </table>
-
-<br />
-
-<%= link_to 'New Tab', new_tab_path %>

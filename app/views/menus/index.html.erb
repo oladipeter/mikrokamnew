@@ -1,22 +1,27 @@
-<h1>Listing menus</h1>
+<h1>Menüpontok listája</h1>
 
-<table>
-  <tr>
-    <th>Title</th>    
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="add_new">
+  <%= link_to 'Új menüpontok felvitele', new_menu_path %>
+  <%= link_to 'Vissza', admins_path %>
+</div>
 
-<% @menus.each do |menu| %>
-  <tr>
-    <td><%= menu.title %></td>        
-    <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
-    <td><%= link_to 'Destroy', menu, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Cím</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @menus.each do |menu| %>
+      <tr>
+        <td><%= menu.title %></td>
+        <td><%= link_to 'Módosít', edit_menu_path(menu) %></td>
+        <td><%= link_to 'Töröl', menu, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
 </table>
-
-<br />
-
-<%= link_to 'New Menu', new_menu_path %>

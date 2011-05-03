@@ -1,22 +1,27 @@
-<h1>Listing advices</h1>
+<h1>Hírek listája</h1>
 
-<table>
-  <tr>
-    <th>Title</th>    
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="add_new">
+  <%= link_to 'Új hír felvitele', new_advice_path %>
+  <%= link_to 'Vissza', admins_path %>
+</div>
 
-<% @advices.each do |advice| %>
-  <tr>
-    <td><%= advice.title %></td>        
-    <td><%= link_to 'Edit', edit_advice_path(advice) %></td>
-    <td><%= link_to 'Destroy', advice, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Cím</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @advices.each do |advice| %>
+      <tr>
+        <td><%= advice.title %></td>
+        <td><%= link_to 'Módosít', edit_advice_path(advice) %></td>
+        <td><%= link_to 'Töröl', advice, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
 </table>
-
-<br />
-
-<%= link_to 'New Advice', new_advice_path %>

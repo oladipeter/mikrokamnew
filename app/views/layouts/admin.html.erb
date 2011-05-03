@@ -25,16 +25,7 @@
       <div class="container">
         <div class="span-8"><%= image_tag("logo.jpg") %></div>
         <div class="span-16 last">
-          <div class="admin_info">
-            <% if admin_signed_in? %>
-              Email : <b><%= current_admin.email %></b><br/>
-              Beléptél : <%= current_admin.current_sign_in_at %><br/>
-              IP : <%= current_admin.current_sign_in_ip %><br/>
-              <div class="logout">
-                <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>
-              </div>
-            <% end %>
-          </div>
+          &nbsp;
         </div>
       </div>
     </div>       
@@ -48,6 +39,16 @@
             <% end %>
           </div>
           <div class="text">
+            <div class="admin_info">
+            <% if admin_signed_in? %>
+              Email : <b><%= current_admin.email %></b><br/>
+              Beléptél : <%= current_admin.current_sign_in_at %><br/>
+              IP : <%= current_admin.current_sign_in_ip %><br/>
+              <div class="logout">
+                <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>
+              </div>
+            <% end %>
+          </div>
             <%= yield %>            
           </div>
         </div>        

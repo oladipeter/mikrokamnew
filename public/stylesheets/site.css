@@ -15,17 +15,17 @@ body {
     line-height: 1.6em;
 }
 
-h1 {
+/*h1 {
     color: #333;
     font-family: Georgia, sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: bold;
     letter-spacing: -1px;
-    margin-bottom: 25px;
-}
+    margin-bottom: 15px;
+}*/
 
-h2 {
+h1, h2 {
     font-family: Georgia;
     word-spacing: normal;
     letter-spacing: -1px;
@@ -46,6 +46,10 @@ input {
     font-size: 11px;
     font-weight: bold;
     color: #00688F;
+}
+
+select {
+  padding: 5px;
 }
 
 /* LI FORMAT */
@@ -404,9 +408,7 @@ ul.services {
 
 .admin_info {
     font-size: 11px;
-    position: relative;
-    top: 5px;
-    left: 30px;
+    margin-bottom: 20px;
 }
 
 .logout a {
@@ -696,6 +698,10 @@ form#admin_new input {
     width: auto;
 }
 
+#content_submit, #menu_submit, #slider_submit, #tab_submit, #advice_submit, #admin_submit {
+  width: auto;
+}
+
 #block_6 #flash_alert {
     margin-bottom: 10px;
 }
@@ -743,10 +749,10 @@ span.delete {
     font-size: 13px;
     font-weight: normal;
     padding: 8px;
-    background: #f0f0f0;
-    border-top: 2px solid #CCC;
+    background: #00688F;
+    border-top: 1px solid #CCC;
     border-bottom: 1px solid #fff;
-    color: #000;
+    color: #fff;
 }
 #box-table-a td
 {

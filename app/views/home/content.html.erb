@@ -28,7 +28,7 @@
                   <p>
                    <%= image_tag("kep_#{slide.image_tag}.png")   %>
                    <% truncated_description = truncate("#{slide.description}", :length => 450, :omission => "...") %>
-                   <%= truncated_description %>
+                   <%= raw truncated_description %>
                   </p>
                 </div>
               <% end %>

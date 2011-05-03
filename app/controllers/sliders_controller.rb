@@ -58,17 +58,12 @@ class SlidersController < ApplicationController
   # PUT /sliders/1
   # PUT /sliders/1.xml
   def update
-    @slider = Slider.find(params[:id])
-
-    respond_to do |format|
+    @slider = Slider.find(params[:id])    
       if @slider.update_attributes(params[:slider])
-        format.html { redirect_to(@slider, :notice => 'Slider was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to sliders_path, :notice => 'Slider was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @slider.errors, :status => :unprocessable_entity }
-      end
-    end
+        render :action => "edit"    
+      end    
   end
 
   # DELETE /sliders/1
