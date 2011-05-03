@@ -1,21 +1,13 @@
-Mikrokamnew::Application.routes.draw do  
-  
-  resources :tabs
-
-  resources :advices
-
-  resources :sliders
-
-  get "home/index"
-
-  match 'admin' => 'admin#index'
+Mikrokamnew::Application.routes.draw do
 
   devise_for :admins  
 
+  resources :admins
+  resources :tabs
+  resources :advices
+  resources :sliders
   resources :menus
-
   resources :contents
-
   resources :tests
 
   scope "/admin" do
@@ -28,10 +20,13 @@ Mikrokamnew::Application.routes.draw do
       get 'advice'
     end
   end
-  
-  # ADMIN
 
-  resources :admins
+  get "home/index"
+
+  match 'admin' => 'admins#index'
+  match 'admins' => 'admins#index'
+  
+  # ADMIN  
 
 
   # The priority is based upon order of creation:

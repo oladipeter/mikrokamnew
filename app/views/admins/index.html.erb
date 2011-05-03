@@ -1,42 +1,68 @@
-<h1>Welcome Admin!</h1>
+<h1>Üdvözöllek Admin!</h1>
 
-<div class="span-16">
+<!-- MENU TABLE -->
 
-  <div class="span-8">
-    <div class="admin_main">
-      <%= link_to "Menu items", menus_path %>
-    </div>
-  </div>
-  <div class="span-8 last">
-    <div class="admin_main">
-      <%= link_to "Content items", contents_path%>
-    </div>
-  </div>
+<h2>Tartalom szerkesztése</h2>
 
-  <div class="span-8">
-    <div class="admin_main">
-      <%= link_to "Slider items", sliders_path%>
-  </div>
-  </div>
-  <div class="span-8 last">
-    <div class="admin_main">
-      <%= link_to "Advice items", advices_path%>
-    </div>
-  </div>
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Szerkeszthető felületek :</th>
+    </tr>
+  </thead>
 
-  <div class="span-16">
-    <div class="admin_main">
-      <%= link_to "Tab items", tabs_path%>
-    </div>
-  </div>
-  
+  <tbody>    
+    <tr>
+      <td><%= link_to "Menüpontok", menus_path %></td>
+    </tr>
+    <tr>
+      <td><%= link_to "Tartalom", contents_path%></td>
+    </tr>
+    <tr>
+      <td><%= link_to "Slider a fejlécben", sliders_path%></td>
+    </tr>
+    <tr>
+      <td><%= link_to "Hírek", advices_path%></td>
+    </tr>
+    <tr>
+      <td><%= link_to "Információk", tabs_path%></td>
+    </tr>
+  </tbody>
+
+</table>
+
+<!-- END MENU TABLE -->
+
+<br/><br/>
+
+<!-- ADMIN TABLE -->
+
+<h2>Adminisztrátorok szerkesztése</h2>
+
+<div class="add_new">
+  <%= link_to "Új adminisztrátor hozzáadása", new_admin_path %>
 </div>
 
-<div class="span-16">
-  Administrators : <br/>
-  <% @admins.each do |admin| %>
-    <%= link_to"#{admin.email}", edit_admin_path(admin) %>
-  <% end %>
-  <%= link_to "Add new admin", new_admin_path %>
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Email</th>
+      <th scope="col">Módosít</th>
+      <th scope="col">Töröl</th>
+    </tr>
+  </thead> 
+
+  <tbody>
+    <% @admins.each do |admin| %>
+      <tr>
+        <td><%= link_to"#{admin.email}", edit_admin_path(admin) %></td>
+        <td><%= link_to"Módosít", edit_admin_path(admin) %></td>
+        <td><%= link_to"Töröl", admin, :confirm => 'Are you sure?', :method => "delete" %></td>
+      </tr>
+    <% end %>
+  </tbody>  
+
+</table>
+
+<!-- END ADMIN TABLE -->
   
-</div>

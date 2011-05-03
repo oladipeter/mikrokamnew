@@ -25,6 +25,14 @@ h1 {
     margin-bottom: 25px;
 }
 
+h2 {
+    font-family: Georgia;
+    word-spacing: normal;
+    letter-spacing: -1px;
+    font-size: 1.6em;
+    color: #333;
+}
+
 #block_6 h1 {
     color: #333;
 }
@@ -340,7 +348,7 @@ ul.services {
 }
 
 #block_7 h1 {
-  color: #fff;
+    color: #fff;
 }
 
 #block_7 .text {
@@ -394,20 +402,15 @@ ul.services {
     padding-right: 10px;
 }
 
-#admin_info {
-    font-family: 'Arial Black', Gadget, sans-serif;
-    font-size: 15px;
-    letter-spacing: -0.05em;
-    display: block;
-    color: #00688F;
-    background-color: #f1f1f1;
-    padding: 10px;
-    padding-left: 55px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    background-image: url('../images/info.png');
-    background-repeat: no-repeat;
-    background-position: 10px 4px;
+.admin_info {
+    font-size: 11px;
+    position: relative;
+    top: 5px;
+    left: 30px;
+}
+
+.logout a {
+    color: #C57504!important;
 }
 
 /* ADMIN CONTENTS */
@@ -464,62 +467,62 @@ h2 .active {
 /* FRONTEND ADVICE */
 
 .advice_content p {
-  text-align: left!important;
+    text-align: left!important;
 }
 
 /* Jquery tools ** TABS ** */
 
 /* root element for tabs  */
 ul.tabs {
-	list-style:none;
-	margin:0 !important;
-	padding:0;
-        width: 600px;
-	border-bottom:1px solid #ccc;
-	height:30px;
+    list-style:none;
+    margin:0 !important;
+    padding:0;
+    width: 600px;
+    border-bottom:1px solid #ccc;
+    height:30px;
 }
 
 /* single tab */
 ul.tabs li {
-	float:left;
-	text-indent:0;
-	padding:0;
-	margin:0 !important;
-	list-style-image:none !important;
+    float:left;
+    text-indent:0;
+    padding:0;
+    margin:0 !important;
+    list-style-image:none !important;
 }
 
 /* link inside the tab. uses a background image */
 ul.tabs a {
-	background: url(../images/tabs.jpg) no-repeat -420px 0;
-	font-size:11px;
-	display:block;
-	height: 30px;
-	line-height:30px;
-	width: 134px;
-	text-align:center;
-	text-decoration:none;
-	color:#333;
-	padding:0px;
-	margin:0px;
-	position:relative;
-	top:1px;
+    background: url(../images/tabs.jpg) no-repeat -420px 0;
+    font-size:11px;
+    display:block;
+    height: 30px;
+    line-height:30px;
+    width: 134px;
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    padding:0px;
+    margin:0px;
+    position:relative;
+    top:1px;
 }
 
 ul.tabs a:active {
-	outline:none;
+    outline:none;
 }
 
 /* when mouse enters the tab move the background image */
 ul.tabs a:hover {
-	background-position: -420px -31px;
-	color:#fff;
+    background-position: -420px -31px;
+    color:#fff;
 }
 
 /* active tab uses a class name "current". its highlight is also done by moving the background image. */
 ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
-	background-position: -420px -62px;
-	cursor:default !important;
-	color:#000 !important;
+    background-position: -420px -62px;
+    cursor:default !important;
+    color:#000 !important;
 }
 
 /* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
@@ -544,7 +547,7 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
 
 /* initially all panes are hidden */
 .panes .pane {
-	display:none;
+    display:none;
 }
 
 .panes div {
@@ -559,8 +562,8 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
 
 /* container for slides */
 .images {
-/*background:#fff url(../images/h300.png) repeat-x;*/
-/*border:1px solid #ccc;*/
+    /*background:#fff url(../images/h300.png) repeat-x;*/
+    /*border:1px solid #ccc;*/
     position: relative;
     height: 150px;
 
@@ -690,18 +693,18 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
 }
 
 form#admin_new input {
-  width: auto;
+    width: auto;
 }
 
 #block_6 #flash_alert {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .images p {
-  font-size: 18px;
-  font-family: Georgia;
-  line-height: 22px;
-  word-spacing: 0px;
+    font-size: 18px;
+    font-family: Georgia;
+    line-height: 22px;
+    word-spacing: 0px;
 }
 
 /* ADMIN MAIN */
@@ -712,3 +715,56 @@ form#admin_new input {
     margin-bottom: 10px;
 }
 
+#administrator {
+    background-color: #f0f0f0;
+    padding: 4px;
+}
+
+span.delete {
+    display: block;
+    text-align: center;
+}
+
+/* TABLE FORMAT ------------------------------------------------------------- */
+
+/* BOX TABLE */
+
+#box-table-a
+{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 13px;
+    margin: 0px;
+    width: 950px;
+    text-align: left;
+    border-collapse: collapse;
+}
+#box-table-a th
+{
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #f0f0f0;
+    border-top: 2px solid #CCC;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+#box-table-a td
+{
+    padding: 8px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    color: #00688F;
+    border-top: 1px solid transparent;
+}
+
+#box-table-a tr:hover td, #box-table-a tr:visited td
+{
+    background: #ddd;
+    color: #00688F;
+}
+
+.add_new {
+  margin-bottom: 15px;
+}
+
+/* END BOX TABLE */

@@ -25,47 +25,32 @@
       <div class="container">
         <div class="span-8"><%= image_tag("logo.jpg") %></div>
         <div class="span-16 last">
-          &nbsp;
+          <div class="admin_info">
+            <% if admin_signed_in? %>
+              Email : <b><%= current_admin.email %></b><br/>
+              Beléptél : <%= current_admin.current_sign_in_at %><br/>
+              IP : <%= current_admin.current_sign_in_ip %><br/>
+              <div class="logout">
+                <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>
+              </div>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>       
 
     <div id="block_6">
       <div class="container prepend-top">
-        <div class="span-16">          
+        <div class="span-24">
           <div id="message">
             <% flash.each do |name, msg| %>
               <%= content_tag :div, msg, :id => "flash_#{name}" %>
             <% end %>
           </div>
           <div class="text">
-            <%= yield %>          
+            <%= yield %>            
           </div>
-        </div>
-        <div class="span-8 last">
-          <div class="right_text">
-            <% if admin_signed_in? %>
-              <div id="admin_info">Admin info :</div>
-              Email : <b><%= current_admin.email %></b><br/>
-              Beléptél : <%= current_admin.current_sign_in_at %><br/>              
-              IP : <%= current_admin.current_sign_in_ip %><br/><br/>
-              <%= link_to "Adminisztrátori fiók szerkesztése!",  %>
-              <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>
-
-              <br/>
-
-              <h1>Edit your contents</h1>
-
-              <%= link_to "Menu items", menus_path %>
-              <%= link_to "Content items", contents_path%>
-              <%= link_to "Slider items", sliders_path%>
-              <%= link_to "Advice items", advices_path%>
-              <%= link_to "Tab items", tabs_path%>
-
-            <% end %>
-
-          </div>
-        </div>
+        </div>        
       </div>
     </div>
 
