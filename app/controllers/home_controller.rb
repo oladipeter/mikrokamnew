@@ -48,3 +48,13 @@ class HomeController < ApplicationController
   end
 
 end
+
+# Insert stylesheets
+
+    #Stylesheet.create :name => "MikroVoks", :name_value => "mikrovoks"
+    #Stylesheet.create :name => "MVmonitor", :name_value => "mvmonitor"
+    #Stylesheet.create :name => "Digirat", :name_value => "digirat"
+    #Stylesheet.create :name => "MikroKam", :name_value => "mikrokam"
+    #Stylesheet.create :name => "EDtR", :name_value => "edtr"
+    #Stylesheet.create :name => "seQUEnce", :name_value => "sequence"
+    #Stylesheet.create :name => "Onkormanyzati TV", :name_value => "onkormanyzatitv"

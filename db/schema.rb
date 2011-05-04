@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110504080251) do
+ActiveRecord::Schema.define(:version => 20110504130641) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -74,6 +74,12 @@ ActiveRecord::Schema.define(:version => 20110504080251) do
     t.datetime "updated_at"
     t.string   "image_tag"
     t.string   "short_description"
+  end
+
+  create_table "stylesheets", :force => true do |t|
+    t.string  "name"
+    t.string  "name_value"
+    t.integer "active",     :default => 0
   end
 
   create_table "tabs", :force => true do |t|
