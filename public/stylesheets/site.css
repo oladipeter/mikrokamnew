@@ -15,25 +15,11 @@ body {
     line-height: 1.6em;
 }
 
-/*h1 {
-    color: #333;
-    font-family: Georgia, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-bottom: 15px;
-}*/
-
 h1, h2 {
     font-family: Georgia;
     word-spacing: normal;
     letter-spacing: -1px;
     font-size: 1.6em;
-    color: #333;
-}
-
-#block_6 h1 {
     color: #333;
 }
 
@@ -182,9 +168,7 @@ a, a:hover, a:link, a:visited {
 /* BLOCK 4 ------------------------------------------------------------------ */
 
 #block_4 h1 {
-    color: #fff;
-    font-size: 26px;
-    letter-spacing: -1px;
+    color: #fff;    
 }
 
 #block_4 .title {
@@ -221,6 +205,11 @@ a, a:hover, a:link, a:visited {
 }
 
 /* BLOCK 5 ------------------------------------------------------------------ */
+
+#block_5 h1 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
 
 #block5_image_left {
     width: 630px;
@@ -277,8 +266,12 @@ ul.services {
 
 /* BLOCK 6 ------------------------------------------------------------------ */
 
+#block_6 h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
 #block_6 .text {
-    font-size: 15px;
     text-align: left;
     color: #333;
     padding-right: 30px;
@@ -290,7 +283,6 @@ ul.services {
 }
 
 #block_6 .right_text {
-    font-size: 12px;
     text-align: left;
     color: #333;
     padding-right: 15px;
@@ -441,7 +433,6 @@ ul.services {
 }
 
 .edit h1 {
-    font-size: 18px;
     letter-spacing: 0px;
     display: inline;
 }
@@ -608,9 +599,12 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
     letter-spacing: -1px;
     word-spacing: -2px;
     font-weight: bold;
-
     margin: 0 0 20px 0px;
     color: #fff;
+}
+
+.images a {
+  padding-top: 30px;
 }
 
 /* Mozgo gombok beallitasa */
@@ -771,6 +765,8 @@ span.delete {
 
 .add_new {
   margin-bottom: 15px;
+  font-family: Georgia;
+  font-size: 16px;
 }
 
 /* END BOX TABLE */

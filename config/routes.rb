@@ -18,6 +18,7 @@ Mikrokamnew::Application.routes.draw do
     member do
       get 'content'
       get 'advice'
+      get 'slider'
     end
   end
 

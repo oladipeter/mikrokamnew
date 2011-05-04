@@ -40,4 +40,8 @@ class HomeController < ApplicationController
     @advice = Advice.find(params[:id])
   end
 
+  def slider
+    @slider = Slider.find(params[:id])
+  end
+
 end

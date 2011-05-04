@@ -16,7 +16,12 @@
     <%= f.text_field :title %>
   </div>
 
-<div class="field">
+  <div class="field">
+    <%= f.label :short_description, "Rövid leírás" %><br />
+    <%= f.text_field :short_description %>
+  </div>
+
+  <div class="field">
     <%= f.label :description, "Leírás" %><br />
     <%= f.cktext_area :description, :toolbar=>'slim', :width=>'100%', :height=>'200px', :skin => "v2" %>
   </div>
