@@ -33,15 +33,18 @@ class HomeController < ApplicationController
   end
 
   def content
-    @content = Content.find(params[:id])    
+    @content = Content.find(params[:id])
+    @container = "content" #Azert kell hogy a viewban tudjam hogy melyik fejlecet kell kiratnom
   end
 
   def advice
     @advice = Advice.find(params[:id])
+    @container = "advice"
   end
 
   def slider
     @slider = Slider.find(params[:id])
+    @container = "slider"
   end
 
 end

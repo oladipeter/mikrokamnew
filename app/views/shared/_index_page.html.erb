@@ -6,14 +6,22 @@
   </ul>
 <% end %>
 
-<h1><%= @content.title %></h1>
-<%= raw @content.content %>
+<% if @container == "content"  %>
 
-<h1><%= @advice.title %></h1>
-<%= raw @advice.description %>
+  <h1><%= @content.title %></h1>
+  <%= raw @content.content %>
 
-<h1><%= @slider.title %></h1>
-<%= raw @slider.description %>
+<% elsif @container == "advice" %>
+
+  <h1><%= @advice.title %></h1>
+  <%= raw @advice.description %>
+
+<% else %>
+
+  <h1><%= @slider.title %></h1>
+  <%= raw @slider.description %>
+
+<% end %>
 
 <% content_for :slider do %>
 

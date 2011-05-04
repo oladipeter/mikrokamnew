@@ -38,17 +38,7 @@
               <%= content_tag :div, msg, :id => "flash_#{name}" %>
             <% end %>
           </div>
-          <div class="text">
-            <div class="admin_info">
-            <% if admin_signed_in? %>
-              Email : <b><%= current_admin.email %></b><br/>
-              Beléptél : <%= current_admin.current_sign_in_at %><br/>
-              IP : <%= current_admin.current_sign_in_ip %><br/>
-              <div class="logout">
-                <%= link_to "Kijelentkezés az adminisztrátori felületről!", destroy_admin_session_path %>
-              </div>
-            <% end %>
-          </div>
+          <div class="text">            
             <%= yield %>            
           </div>
         </div>        

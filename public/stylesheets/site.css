@@ -405,11 +405,18 @@ ul.services {
 }
 
 .admin_info {
-    font-size: 11px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
+.admin_image, .admin_text {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .logout a {
+    font-size: 12px;
     color: #C57504!important;
 }
 
