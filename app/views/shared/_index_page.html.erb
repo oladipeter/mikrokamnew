@@ -29,9 +29,9 @@
                 <div>
                   <h3><%= slide.title %></h3>
                   <p>
-                   <%= image_tag("kep_#{slide.image_tag}.png")   %>
+                   <%= link_to image_tag("kep_#{slide.image_tag}.png"), slider_home_path(slide), :class => "slide_image_link" %>
                    <% truncated_description = truncate("#{slide.short_description}", :length => 250, :omission => "...") %>
-                   <%= link_to "#{ raw truncated_description}", slider_home_path(slide) %>
+                   <%= link_to "#{ raw truncated_description}", slider_home_path(slide), :class => "slide_short_description" %>
                   </p>
                 </div>
               <% end %>
@@ -63,8 +63,8 @@
     <% @contents.each do |content| %>
       <div class="advice_title"><%= link_to"#{content.title}", content_home_path(content) %></div>
       <div class="advice_content">
-        <% truncated_content = truncate("#{content.content}", :length => 200, :omission => "...") %>
-        <%= raw truncated_content %>
+        <% truncated_content = truncate("#{content.content}", :length => 400, :omission => "...") %>
+        <%= raw truncated_content %>        
       </div>
     <% end %>
 
@@ -74,6 +74,7 @@
         <div class="advice_content">
           <% truncated_advice = truncate("#{advice.description}", :length => 200, :omission => "...") %>
           <%= raw truncated_advice %>
+          <%= link_to image_tag("read_more.jpg"), advice_home_path(advice), :class => "read_more"%>
         </div>
     <% end %>
 
