@@ -1,5 +1,9 @@
 Mikrokamnew::Application.routes.draw do
 
+  get "styles/index"
+
+  get "styles/update"
+
   devise_for :admins  
 
   resources :admins
@@ -8,22 +12,30 @@ Mikrokamnew::Application.routes.draw do
   resources :sliders
   resources :menus
   resources :contents
-  resources :tests
+  resources :tests  
 
   scope "/admin" do
     resources :menus, :contents
+  end
+
+  resources :styles do
+    member do
+      get 'new'
+    end
   end
 
   resources :home do
     member do
       get 'content'
       get 'advice'
-      get 'slider'
+      get 'slider'      
     end
   end
 
   get "home/index"
-
+  get "home/stylesheet"
+  
+  match 'style' => "style#index"
   match 'admin' => 'admins#index'
   match 'admins' => 'admins#index'
   

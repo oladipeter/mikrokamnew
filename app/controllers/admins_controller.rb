@@ -3,7 +3,7 @@ class AdminsController < ApplicationController
   before_filter :authenticate_admin!
   layout "admin"
   
-  def index
+  def index    
     @admins = Admin.find(:all)
   end
 
