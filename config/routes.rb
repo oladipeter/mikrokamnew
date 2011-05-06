@@ -1,9 +1,5 @@
 Mikrokamnew::Application.routes.draw do
 
-  get "styles/index"
-
-  get "styles/update"
-
   devise_for :admins  
 
   resources :admins
@@ -32,10 +28,9 @@ Mikrokamnew::Application.routes.draw do
     end
   end
 
-  get "home/index"
-  get "home/stylesheet"
+  get "home/index"  
   
-  match 'style' => "style#index"
+  match 'stylesheet' => "stylesheet#index"
   match 'admin' => 'admins#index'
   match 'admins' => 'admins#index'
   

@@ -1,15 +1,15 @@
 class StylesController < ApplicationController
   
   def index    
-    @styles = Style.find(:all)
+    @styles = Styles.find(:all)
   end
 
   def new
-    @style = Style.new
+    @styles = Styles.new
   end
 
   def update
-    @style = Style.find(params[:id])
+    @style = Styles.find(params[:id])
 
       if @style.update_attributes(params[:style])
         redirect_to admin_path, :notice => 'Stylesheet was successfully updated.'

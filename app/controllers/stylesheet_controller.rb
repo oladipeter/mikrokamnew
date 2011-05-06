@@ -3,8 +3,8 @@ class StylesheetController < ApplicationController
   layout "admin"
 
   def index
-    @style = Style.new
-    @styles = Style.find(:all)
+    @stylesheet = Stylesheet.new
+    @available_stylesheets = Stylesheet.find(:all)
   end
 
   def update

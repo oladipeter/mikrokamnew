@@ -1,6 +1,10 @@
-<%= form_for @style do |f| %>
-  <%= f.label :name %>:
-  <%= f.text_field :name %><br />
+<%= form_tag @stylesheets do |f| %>
+  <%= label_tag :name, "Stylesheet" %>
+  <%= text_field_tag :name %><br />
 
-  <%= f.submit %>
+  <%= submit_tag %>
+<% end %>
+
+<% @available_stylesheets.each do |stylesheet| %>
+   <%= stylesheet.name %>
 <% end %>
