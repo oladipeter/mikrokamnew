@@ -711,7 +711,7 @@ form#admin_new input {
     width: auto;
 }
 
-#content_submit, #menu_submit, #slider_submit, #tab_submit, #advice_submit, #admin_submit {
+#content_submit, #menu_submit, #slider_submit, #tab_submit, #advice_submit, #admin_submit, #stylesheet_submit {
   width: auto;
 }
 

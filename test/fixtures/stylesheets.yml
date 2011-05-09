@@ -3,7 +3,9 @@
 one:
   name: MyString
   name_value: MyString
+  active: 1
 
 two:
   name: MyString
   name_value: MyString
+  active: 1

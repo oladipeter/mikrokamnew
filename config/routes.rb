@@ -1,4 +1,4 @@
-Mikrokamnew::Application.routes.draw do
+Mikrokamnew::Application.routes.draw do  
 
   devise_for :admins  
 
@@ -8,17 +8,12 @@ Mikrokamnew::Application.routes.draw do
   resources :sliders
   resources :menus
   resources :contents
-  resources :tests  
+  resources :tests
+  resources :stylesheets
 
   scope "/admin" do
     resources :menus, :contents
-  end
-
-  resources :styles do
-    member do
-      get 'new'
-    end
-  end
+  end  
 
   resources :home do
     member do
@@ -28,11 +23,10 @@ Mikrokamnew::Application.routes.draw do
     end
   end
 
-  get "home/index"  
+  get "home/index"   
   
-  match 'stylesheet' => "stylesheet#index"
   match 'admin' => 'admins#index'
-  match 'admins' => 'admins#index'
+  match 'admins' => 'admins#index'  
   
   # ADMIN  
 

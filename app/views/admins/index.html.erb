@@ -6,14 +6,32 @@
   </div>
   <div class="span-12 last">
     <div class="box">
-
-      <%# @stylesheets.each do |style| %>
-        <%#= style.name %>
-      <%# end %>
-
     </div>
   </div>
 </div>
+
+<!-- ADMIN TABLE -->
+
+<h2>Template szerkesztése</h2>
+
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Template</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= link_to"Template módosítása", stylesheets_path %></td>
+      </tr>
+  </tbody>
+
+</table>
+
+<br/><br/>
+
+<!-- END ADMIN TABLE -->
 
 <!-- ADMIN TABLE -->
 
