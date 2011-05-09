@@ -1,6 +1,6 @@
 Mikrokamnew::Application.routes.draw do  
 
-  devise_for :admins  
+  devise_for :admins
 
   resources :admins
   resources :tabs
@@ -21,12 +21,12 @@ Mikrokamnew::Application.routes.draw do
       get 'advice'
       get 'slider'      
     end
-  end
+  end 
 
   get "home/index"   
   
   match 'admin' => 'admins#index'
-  match 'admins' => 'admins#index'  
+  match 'admins' => 'admins#index'
   
   # ADMIN  
 
@@ -86,5 +86,5 @@ Mikrokamnew::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  
 end

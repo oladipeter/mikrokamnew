@@ -64,8 +64,8 @@ class StylesheetsController < ApplicationController
 
     @stylesheet = Stylesheet.find(params[:id])    
     @stylesheet.update_attributes(:active => "1")
+    redirect_to stylesheets_path, :notice => 'Template modified!'
 
-    redirect_to stylesheets_path, :notice => 'Template modified!'    
   end
 
   # DELETE /stylesheets/1
@@ -79,4 +79,12 @@ class StylesheetsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def modify
+    Stylesheet.update_all(:active => "0")
+    @stylesheet = Stylesheet.find(params[:id])
+    @stylesheet.update_attributes(:active => "1")
+  end
+
+
 end

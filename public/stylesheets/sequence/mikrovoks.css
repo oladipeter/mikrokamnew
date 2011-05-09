@@ -20,7 +20,7 @@ h1, h2, h3 {
     word-spacing: normal;
     letter-spacing: -1px;
     font-size: 1.6em;
-    color: #333;
+    color: red;
 }
 
 input {
@@ -305,11 +305,7 @@ ul.services {
     line-height: 20px;
     padding-right: 15px;
     margin-bottom: 5px;
-    color: #7e5421;
-}
-
-.advice_title a {
-  color: #CB7307;
+    color: #00688F;
 }
 
 .advice_content {
