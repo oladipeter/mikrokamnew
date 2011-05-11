@@ -7,26 +7,26 @@
  */
 
 $(document).ready(function() {
-  $(".slidetabs").tabs(".images > div", {
+    $(".slidetabs").tabs(".images > div", {
 
-	// enable "cross-fading" effect
-	effect: 'fade',
-	fadeOutSpeed: "slow",
+        // enable "cross-fading" effect
+        effect: 'fade',
+        fadeOutSpeed: "slow",
 
-	// start from the beginning after the last tab
-	rotate: true
+        // start from the beginning after the last tab
+        rotate: true
 
-  // use the slideshow plugin. It accepts its own configuration
-  }).slideshow();
+        // use the slideshow plugin. It accepts its own configuration
+    }).slideshow();
 
-  $(".slidetabs").data("slideshow").play();
-
-  $('.play').click(function() {
     $(".slidetabs").data("slideshow").play();
-  });
 
-  $('.stop').click(function() {
-    $(".slidetabs").data("slideshow").stop();
-  });
+    $('.play').click(function() {
+        $(".slidetabs").data("slideshow").play();
+    });
+
+    $('.stop').click(function() {
+        $(".slidetabs").data("slideshow").stop();
+    });
 
 });

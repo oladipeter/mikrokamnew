@@ -1,7 +1,7 @@
 ﻿/*
-Copyright (c) 2003-2010, CKSource - Frederico Knabben. All rights reserved.
-For licensing, see LICENSE.html or http://ckeditor.com/license
-*/
+ Copyright (c) 2003-2010, CKSource - Frederico Knabben. All rights reserved.
+ For licensing, see LICENSE.html or http://ckeditor.com/license
+ */
 
 /**
  * @fileOverview Defines the "virtual" dialog, dialog content and dialog button
@@ -167,7 +167,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
  * @field
  * @type String
  * @example
- * contentDefinition.accessKey = 'Q';	// Switch to this page when CTRL-Q is pressed.
+ * contentDefinition.accessKey = 'Q';    // Switch to this page when CTRL-Q is pressed.
  */
 
 /**
@@ -219,7 +219,7 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
  * @type String
  * @field
  * @example
- * exitButton.accessKey = 'X';		// Button will be pressed when user presses CTRL-X
+ * exitButton.accessKey = 'X';        // Button will be pressed when user presses CTRL-X
  */
 
 /**

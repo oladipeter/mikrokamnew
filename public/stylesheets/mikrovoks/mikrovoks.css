@@ -35,7 +35,7 @@ input {
 }
 
 select {
-  padding: 5px;
+    padding: 5px;
 }
 
 .read_more {
@@ -133,7 +133,15 @@ a, a:hover, a:link, a:visited {
 #block_8 {
     width: 100%;
     height: auto;
-    background-color: #333;
+    background-color: #fff;
+}
+
+#block_9 {
+    width: 100%;
+    height: auto;
+    background-color: #015270;
+    color: #fff;
+    padding: 5px 0px 5px 0px;
 }
 
 /* CONTENTS STARTS HERE */
@@ -174,7 +182,7 @@ a, a:hover, a:link, a:visited {
 #block_4 h3 {
     font-size: 32px;
     font-weight: normal;
-    color: #fff;    
+    color: #fff;
 }
 
 #block_4 .title {
@@ -213,8 +221,8 @@ a, a:hover, a:link, a:visited {
 /* BLOCK 5 ------------------------------------------------------------------ */
 
 #block_5 h1 {
-  font-size: 22px;
-  margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 25px;
 }
 
 #block5_image_left {
@@ -273,8 +281,8 @@ ul.services {
 /* BLOCK 6 ------------------------------------------------------------------ */
 
 #block_6 h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 #block_6 .text {
@@ -318,17 +326,31 @@ ul.services {
 
 .tovabbi_termekek {
     padding-top: 30px;
-    text-align: left;
+    text-align: justify;
 }
 
 .sor {
-    margin-top: 30px;
+    font-size: 10px;
+    margin-top: 10px;
     text-align: justify;
+}
+
+.sor img {
+    margin-right: 10px;
+    float: left;
+}
+
+.sor h3 {
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .sor .text {
     padding: 20px;
-    border: 1px solid #ddd;
+    /*border: 1px solid #ddd;*/
 }
 
 /* TRY */
@@ -344,8 +366,6 @@ ul.services {
     height: auto;
     font-size: 15px;
     padding-bottom: 30px;
-    /*border-top: 1px solid #d1d1d1;*/
-    /*border-bottom: 1px solid #d1d1d1;*/
     color: #fff;
 }
 
@@ -354,8 +374,8 @@ ul.services {
 }
 
 #block_7 .text {
-    color: #333;
-    background-color: #fff;
+    color: #fff;
+    background-color: #015270;
     margin-bottom: 10px;
     font-size: 11px;
 }
@@ -365,7 +385,7 @@ ul.services {
 #block_8 {
     color: #333;
     font-weight: bold;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
     background-color: #fff;
 }
 
@@ -410,14 +430,14 @@ ul.services {
 }
 
 .admin_image, .admin_text {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .logout a {
     font-size: 12px;
-    color: #C57504!important;
+    color: #C57504 !important;
 }
 
 /* ADMIN CONTENTS */
@@ -473,87 +493,111 @@ h2 .active {
 /* FRONTEND ADVICE */
 
 .advice_content p {
-    text-align: left!important;
+    text-align: left !important;
 }
 
 /* Jquery tools ** TABS ** */
 
 /* root element for tabs  */
 ul.tabs {
-    list-style:none;
-    margin:0 !important;
-    padding:0;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;
     width: 600px;
-    border-bottom:1px solid #ccc;
-    height:30px;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
 }
 
 /* single tab */
 ul.tabs li {
-    float:left;
-    text-indent:0;
-    padding:0;
-    margin:0 !important;
-    list-style-image:none !important;
+    float: left;
+    text-indent: 0;
+    padding: 0;
+    margin: 0 !important;
+    list-style-image: none !important;
 }
 
 /* link inside the tab. uses a background image */
 ul.tabs a {
     background: url(./images/tabs.jpg) no-repeat -420px 0;
-    font-size:11px;
-    display:block;
+    font-size: 11px;
+    display: block;
     height: 30px;
-    line-height:30px;
+    line-height: 30px;
     width: 134px;
-    text-align:center;
-    text-decoration:none;
-    color:#333;
-    padding:0px;
-    margin:0px;
-    position:relative;
-    top:1px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 1px;
 }
 
 ul.tabs a:active {
-    outline:none;
+    outline: none;
 }
 
 /* when mouse enters the tab move the background image */
 ul.tabs a:hover {
     background-position: -420px -31px;
-    color:#fff;
+    color: #fff;
 }
 
 /* active tab uses a class name "current". its highlight is also done by moving the background image. */
 ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
     background-position: -420px -62px;
-    cursor:default !important;
-    color:#000 !important;
+    cursor: default !important;
+    color: #000 !important;
 }
 
 /* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
 
-
 /* width 1 */
-ul.tabs a.s 			{ background-position: -553px 0; width:81px; }
-ul.tabs a.s:hover 	{ background-position: -553px -31px; }
-ul.tabs a.s.current  { background-position: -553px -62px; }
+ul.tabs a.s {
+    background-position: -553px 0;
+    width: 81px;
+}
+
+ul.tabs a.s:hover {
+    background-position: -553px -31px;
+}
+
+ul.tabs a.s.current {
+    background-position: -553px -62px;
+}
 
 /* width 2 */
-ul.tabs a.l 			{ background-position: -248px -0px; width:174px; }
-ul.tabs a.l:hover 	{ background-position: -248px -31px; }
-ul.tabs a.l.current  { background-position: -248px -62px; }
+ul.tabs a.l {
+    background-position: -248px -0px;
+    width: 174px;
+}
 
+ul.tabs a.l:hover {
+    background-position: -248px -31px;
+}
+
+ul.tabs a.l.current {
+    background-position: -248px -62px;
+}
 
 /* width 3 */
-ul.tabs a.xl 			{ background-position: 0 -0px; width:248px; }
-ul.tabs a.xl:hover 	{ background-position: 0 -31px; }
-ul.tabs a.xl.current { background-position: 0 -62px; }
+ul.tabs a.xl {
+    background-position: 0 -0px;
+    width: 248px;
+}
 
+ul.tabs a.xl:hover {
+    background-position: 0 -31px;
+}
+
+ul.tabs a.xl.current {
+    background-position: 0 -62px;
+}
 
 /* initially all panes are hidden */
 .panes .pane {
-    display:none;
+    display: none;
 }
 
 .panes div {
@@ -568,8 +612,8 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
 
 /* container for slides */
 .images {
-    /*background:#fff url(./images/h300.png) repeat-x;*/
-    /*border:1px solid #ccc;*/
+/*background:#fff url(./images/h300.png) repeat-x;*/
+/*border:1px solid #ccc;*/
     position: relative;
     height: 150px;
 
@@ -586,14 +630,14 @@ ul.tabs a.xl.current { background-position: 0 -62px; }
 }
 
 .slide_short_description {
-  position: relative;
-  top: 20px;
+    position: relative;
+    top: 20px;
 }
 
 .slide_short_description {
-  font-size: 22px;
-  font-weight: normal!important;
-  line-height: 26px;
+    font-size: 22px;
+    font-weight: normal !important;
+    line-height: 26px;
 }
 
 /* single slide */
@@ -712,7 +756,7 @@ form#admin_new input {
 }
 
 #content_submit, #menu_submit, #slider_submit, #tab_submit, #advice_submit, #admin_submit {
-  width: auto;
+    width: auto;
 }
 
 #block_6 #flash_alert {
@@ -748,8 +792,7 @@ span.delete {
 
 /* BOX TABLE */
 
-#box-table-a
-{
+#box-table-a {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 13px;
     margin: 0px;
@@ -757,8 +800,8 @@ span.delete {
     text-align: left;
     border-collapse: collapse;
 }
-#box-table-a th
-{
+
+#box-table-a th {
     font-size: 13px;
     font-weight: normal;
     padding: 8px;
@@ -767,8 +810,8 @@ span.delete {
     border-bottom: 1px solid #fff;
     color: #fff;
 }
-#box-table-a td
-{
+
+#box-table-a td {
     padding: 8px;
     background: #f0f0f0;
     border-bottom: 1px solid #fff;
@@ -776,16 +819,15 @@ span.delete {
     border-top: 1px solid transparent;
 }
 
-#box-table-a tr:hover td, #box-table-a tr:visited td
-{
+#box-table-a tr:hover td, #box-table-a tr:visited td {
     background: #ddd;
     color: #00688F;
 }
 
 .add_new {
-  margin-bottom: 15px;
-  font-family: Georgia;
-  font-size: 16px;
+    margin-bottom: 15px;
+    font-family: Georgia;
+    font-size: 16px;
 }
 
 /* END BOX TABLE */
