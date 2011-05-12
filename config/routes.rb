@@ -1,5 +1,7 @@
 Mikrokamnew::Application.routes.draw do  
 
+  resources :infos
+
   devise_for :admins
 
   resources :admins
@@ -27,6 +29,8 @@ Mikrokamnew::Application.routes.draw do
   
   match 'admin' => 'admins#index'
   match 'admins' => 'admins#index'
+
+  match "infos/:id/show_tabs" => "infos#show_tabs", :as => "show_the_tabs"
   
   # ADMIN  
 

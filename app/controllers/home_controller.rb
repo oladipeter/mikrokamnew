@@ -34,12 +34,35 @@ class HomeController < ApplicationController
 
   def tab_object_init #on the layout
     @tab = Tab.new
-    @tabs = Tab.find(:all)
   end
 
   def content
-    @content = Content.find(params[:id])
+    # Lehet hogy ide fog majd kelleni a throught, valamin kerresztül nézd meg!
+
+    # megkapom a params [:id]- ban a megjeleno tartalom id-et => mondjuk : 2
+
+
+    @content = Content.find(params[:id]) # megvan az adott tartalom
+    @content_id = @content.id # megvan az adott tartalomhoz tartozo id -- 2
+
+    # vegignezzuk az osszes info, ha van olyan info melynek a content_id-je megegyezik a @content_id-val
+    # akkor kiiratjuk a hozza tartozo tabokat
+
+    # Lehet, hogy az adott tartalomhoz nem tartozik info, meg kell vizsgalni
+
+    @infos = Info.find(:all)
+
+    @infos.each do |info|
+      if @content_id == info.content_id # Ha letezik olyan info amihez van rendelve tartalom akkor | Ha 2 == 2
+        @info_content_id = info.content.id # Az az info id ami a megjeleno tartalomhoz kapcsolodik | 3
+        @info_main_id = info.id
+      end
+    end
+
+    @tabs = Tab.find_all_by_info_id(@info_main_id)
+
     @container = "content" #Azert kell hogy a viewban tudjam hogy melyik fejlecet kell kiratnom
+
   end
 
   def advice

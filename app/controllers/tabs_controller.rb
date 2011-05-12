@@ -4,6 +4,8 @@ class TabsController < ApplicationController
   layout 'admin'
 
   def index
+    @content = Content.new
+    @info = Info.new
     @tabs = Tab.all
 
     respond_to do |format|
@@ -27,11 +29,6 @@ class TabsController < ApplicationController
   # GET /tabs/new.xml
   def new
     @tab = Tab.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @tab }
-    end
   end
 
   # GET /tabs/1/edit
@@ -43,32 +40,22 @@ class TabsController < ApplicationController
   # POST /tabs.xml
   def create
     @tab = Tab.new(params[:tab])
-
-    respond_to do |format|
       if @tab.save
-        format.html { redirect_to(@tab, :notice => 'Tab was successfully created.') }
-        format.xml  { render :xml => @tab, :status => :created, :location => @tab }
+        redirect_to tabs_path
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @tab.errors, :status => :unprocessable_entity }
+        render :action => "new"
       end
-    end
   end
 
   # PUT /tabs/1
   # PUT /tabs/1.xml
   def update
     @tab = Tab.find(params[:id])
-
-    respond_to do |format|
       if @tab.update_attributes(params[:tab])
-        format.html { redirect_to(@tab, :notice => 'Tab was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to tabs_path, :notice => 'Tab was successfully updated.'
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @tab.errors, :status => :unprocessable_entity }
+        render :action => "edit"
       end
-    end
   end
 
   # DELETE /tabs/1

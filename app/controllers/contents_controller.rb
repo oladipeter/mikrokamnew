@@ -6,6 +6,8 @@ class ContentsController < ApplicationController
   # GET /contents
   # GET /contents.xml
   def index
+    @info = Info.new
+    @info_contents = Info.all
     @contents = Content.all
 
     respond_to do |format|

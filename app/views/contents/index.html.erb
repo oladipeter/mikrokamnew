@@ -15,13 +15,18 @@
   </thead>
 
   <tbody>
-    <% @contents.each do |content| %>
+  <% @contents.each do |content| %>
+
       <tr>
+
         <td><%= content.title %></td>
+
         <td><%= link_to 'Módosít', edit_content_path(content) %></td>
         <td><%= link_to 'Töröl', content, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+
       </tr>
-    <% end %>
+
+  <% end %>
   </tbody>
 
 </table>
