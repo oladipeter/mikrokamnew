@@ -19,7 +19,7 @@
       <tr>
         <td><%= slider.title %></td>
         <td><%= link_to 'Módosít', edit_slider_path(slider) %></td>
-        <td><%= link_to 'Töröl', slider, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+        <td class="delete"><%= link_to 'Töröl', slider, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>

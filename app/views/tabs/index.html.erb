@@ -8,8 +8,9 @@
 <table id="box-table-a">
   <thead>
     <tr>
-      <th scope="col">Tab neve:</th>
-      <th scope="col">Content id:</th>
+      <th scope="col">Tab neve :</th>
+      <th scope="col">Hozzárendelt tartalom :</th>
+      <th scope="col">Aktív</th>
       <th scope="col">&nbsp;</th>
       <th scope="col">&nbsp;</th>
     </tr>
@@ -19,8 +20,21 @@
     <% @tabs.each do |tab| %>
       <tr>
         <td><%= tab.title %></td>
+
+        <% if tab.content.title %>
+          <td><%= tab.content.title %></td>
+        <% else %>
+           <td><%= "Nincs hozzárendelt tartalom" %></td>
+        <% end %>
+
+        <% if tab.active? %>
+          <td><%= "Aktív" %></td>
+        <% else %>
+           <td><%= "Nem aktív" %></td>
+        <% end %>
+
         <td><%= link_to 'Módosít', edit_tab_path(tab) %></td>
-        <td><%= link_to 'Töröl', tab, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+        <td class="delete"><%= link_to 'Töröl', tab, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>

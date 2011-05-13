@@ -798,6 +798,10 @@ span.delete {
     border-top: 1px solid transparent;
 }
 
+td.delete {
+  text-align: right;
+}
+
 #box-table-a tr:hover td, #box-table-a tr:visited td {
     background: #ddd;
     color: #00688F;

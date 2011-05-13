@@ -1,25 +1,28 @@
-<h1>Listing infos</h1>
+<h1>Fülekkel ellátott területek</h1>
 
-<table>
-  <tr>
-    <th>Infó neve</th>
-    <th>Ennél a tartalomnál jelenik meg!</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div class="add_new">
+  <%= link_to 'Új fülekkel ellátott terület létrehozása', new_menu_path %>
+  <%= link_to 'Vissza', admins_path %>
+</div>
 
-<% @infos.each do |info| %>
-  <tr>
-    <td><%= link_to "#{info.name}", show_the_tabs_path(info) %></td>
-    <td><%= info.content.title%></td>
-    <td><%= link_to 'Show', info %></td>
-    <td><%= link_to 'Edit', edit_info_path(info) %></td>
-    <td><%= link_to 'Destroy', info, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+<table id="box-table-a">
+  <thead>
+    <tr>
+      <th scope="col">Cím</th>
+      <th scope="col">&nbsp;</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @infos.each do |info| %>
+      <tr>
+        <td><%= info.name %></td>
+        <td><%= link_to 'Módosít', edit_info_path(info) %></td>
+        <td class="delete"><%= link_to 'Töröl', info, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+
 </table>
 
-<br />
-
-<%= link_to 'New Info', new_info_path %>

@@ -19,7 +19,7 @@
       <tr>
         <td><%= advice.title %></td>
         <td><%= link_to 'Módosít', edit_advice_path(advice) %></td>
-        <td><%= link_to 'Töröl', advice, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+        <td class="delete"><%= link_to 'Töröl', advice, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>

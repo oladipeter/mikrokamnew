@@ -23,6 +23,10 @@
     <%= f.label :info_id, "Melyik Info-hoz szeretnéd társítani?" %><br />
     <%= f.select("info_id", Info.all.collect {|info| [ info.name, info.id ] }) %>
   </div>
+  <div class="field">
+    <%= f.label :active, "Aktív," %><br />
+    <%= f.select(:active, [['Aktív', true], ['Nem aktív', false]]) %>
+  </div>
   <div class="actions">
     <%= f.submit "Rendben!" %>
   </div>

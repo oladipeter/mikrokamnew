@@ -19,7 +19,7 @@ class HomeController < ApplicationController
 
   def advice_object_init
     @advice = Advice.new
-    @advices = Advice.find(:all)
+    @advices = Advice.find(:all, :order => "updated_at DESC", :limit => 3)
   end
 
   def menu_object_init #on the layout
@@ -56,10 +56,12 @@ class HomeController < ApplicationController
       if @content_id == info.content_id # Ha letezik olyan info amihez van rendelve tartalom akkor | Ha 2 == 2
         @info_content_id = info.content.id # Az az info id ami a megjeleno tartalomhoz kapcsolodik | 3
         @info_main_id = info.id
+        @info_name = info.name
       end
     end
 
-    @tabs = Tab.find_all_by_info_id(@info_main_id)
+    #@tabs = Tab.find_all_by_info_id(@info_main_id)
+    @tabs = Tab.where("info_id = ? AND active = ?", @info_main_id, true)
 
     @container = "content" #Azert kell hogy a viewban tudjam hogy melyik fejlecet kell kiratnom
 
@@ -68,11 +70,13 @@ class HomeController < ApplicationController
   def advice
     @advice = Advice.find(params[:id])
     @container = "advice"
+    @tabs = []
   end
 
   def slider
     @slider = Slider.find(params[:id])
     @container = "slider"
+    @tabs = []
   end
 
 end

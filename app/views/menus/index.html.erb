@@ -19,7 +19,7 @@
       <tr>
         <td><%= menu.title %></td>
         <td><%= link_to 'Módosít', edit_menu_path(menu) %></td>
-        <td><%= link_to 'Töröl', menu, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
+        <td class="delete"><%= link_to 'Töröl', menu, :confirm => 'Biztosan törlöd?', :method => :delete %></td>
       </tr>
     <% end %>
   </tbody>

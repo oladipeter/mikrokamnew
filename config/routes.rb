@@ -14,7 +14,7 @@ Mikrokamnew::Application.routes.draw do
   resources :stylesheets
 
   scope "/admin" do
-    resources :menus, :contents
+    resources :menus, :contents, :sliders, :tabs
   end  
 
   resources :home do
@@ -25,12 +25,13 @@ Mikrokamnew::Application.routes.draw do
     end
   end 
 
-  get "home/index"   
+  get "home/index"
   
   match 'admin' => 'admins#index'
   match 'admins' => 'admins#index'
 
   match "infos/:id/show_tabs" => "infos#show_tabs", :as => "show_the_tabs"
+  #match "home/:id/content" => "home#content", :as => "naming_url_content"
   
   # ADMIN  
 

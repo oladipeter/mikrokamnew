@@ -40,7 +40,7 @@ select {
 }
 
 .read_more {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 /* LI FORMAT */
@@ -302,6 +302,21 @@ ul.services {
     color: #333;
     padding-right: 15px;
     border-right: 5px solid #00688F;
+}
+
+.menu_title {
+  background-image: url('./images/menu_button.png');
+  background-repeat: no-repeat;
+  height: 34px;
+  margin-bottom: 10px;
+}
+
+.menu_title a {
+    position: relative;
+    top: 8px;
+    left: 40px;
+    font-weight: bold;
+    color: #333;
 }
 
 #advice {
