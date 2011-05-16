@@ -45,7 +45,7 @@ CKEDITOR.editorConfig = function(config) {
             [
                 ['PasteText'],
                 ['Bold','Italic','Underline'],
-                ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Format','Image']
+                ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock','Format','Image','Link','Unlink']
             ];
 
     config.toolbar = 'light';

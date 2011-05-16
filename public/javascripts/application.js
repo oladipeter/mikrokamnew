@@ -29,4 +29,28 @@ $(document).ready(function() {
         $(".slidetabs").data("slideshow").stop();
     });
 
+    // SCROLLABLE
+
+    // EASING
+
+    // custom easing called "custom"
+    $.easing.custom = function (x, t, b, c, d) {
+        var s = 1.70158;
+        if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+        return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+    }
+
+    $(function() {
+
+	// initialize scrollable with mousewheel support
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true, easing: 'custom', speed: 700, circular: true }).play();
+
 });
+
+});
+
+
+
+
+
+

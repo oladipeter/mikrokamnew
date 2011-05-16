@@ -60,15 +60,14 @@ class AdvicesController < ApplicationController
   def update
     @advice = Advice.find(params[:id])
 
-    respond_to do |format|
+
       if @advice.update_attributes(params[:advice])
-        format.html { redirect_to(@advice, :notice => 'Advice was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to advices_path, :notice => 'Advice was successfully updated.'
+
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @advice.errors, :status => :unprocessable_entity }
+        render :action => "edit"
       end
-    end
+
   end
 
   # DELETE /advices/1

@@ -847,3 +847,54 @@ span.delete {
 }
 
 /* END BOX TABLE */
+
+/* SCROLLABLE --------------------------------------------------------------------------------------------------------*/
+
+/* root element for scrollable */
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+
+	/* vertical scrollables have typically larger height than width but not now */
+	height: 550px;
+	width: 280px;
+    text-align: justify;
+}
+
+/* root element for scrollable items */
+.scrollable .items {
+	position:absolute;
+
+	/* this time we have very large space for the height */
+	height:20000em;
+}
+
+a.prev, a.next {
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: url(./images/advice_button.png) no-repeat;
+  width: 81px;
+}
+
+a.prev {
+ padding-left: 24px;
+}
+
+a.next {
+    position: relative;;
+    left: 20px;
+    padding-left: 10px;
+}
+
+#actions {
+}
+
+#advice_next_button {
+    text-align: center;
+}
+
+/* SCROLLABLE --------------------------------------------------------------------------------------------------------*/
