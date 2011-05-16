@@ -320,16 +320,21 @@ ul.services {
 }
 
 #advice {
+    margin-bottom: 25px;
 }
 
 .advice_title {
-    font-size: 16px;
+    font-family: Georgia;
+    font-size: 18px;
     letter-spacing: -0.7px;
-    font-weight: bold;
     line-height: 20px;
     padding-right: 15px;
     margin-bottom: 5px;
-    color: #00688F;
+}
+
+.advice_title a {
+    color: #333!important;
+    text-align: left;
 }
 
 .advice_content {
@@ -858,7 +863,7 @@ span.delete {
 	overflow:hidden;
 
 	/* vertical scrollables have typically larger height than width but not now */
-	height: 550px;
+	height: 480px;
 	width: 280px;
     text-align: justify;
 }

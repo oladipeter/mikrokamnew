@@ -74,19 +74,9 @@
 
     <br/>
 
-    <h1>Hírek, aktualitások</h1>
-    <% @advices.each do |advice| %>
-        <div class="advice_title"><%= link_to "#{advice.title}", advice_home_path(advice) %></div>
-        <div class="advice_content">
-          <% truncated_advice = truncate("#{advice.description}", :length => 200, :omission => "...") %>
-          <%= raw truncated_advice %>
-          <%= link_to image_tag("read_more.jpg"), advice_home_path(advice), :class => "read_more"%>
-        </div>
-    <% end %>
-
-    <br/>
-
     <!-- SCROLLABLE -->
+
+    <h1>Hírek, aktualitások</h1>
 
     <div id="actions">
       <div class="span-2">
@@ -103,124 +93,46 @@
     <div class="scrollable vertical">
 
       <!-- root element for the scrollable elements -->
-      <div class="items">
+      <div class="items"> <!-- START ITEMS -->
 
-        <!-- START PAGE 1 -->
-        <div>
+      <% div_value = 1 %>
 
-          <!-- ITEM 1 -->
+            <% @advices.each do |advice| %>
+              <% value = div_value.modulo(3) %>
+              <% if value == 1 %>
+                <div class="third"> <!-- third start -->
+                  <div class="advice_title"><%= link_to "#{advice.title}", advice_home_path(advice) %></div>
+                    <div class="advice_content">
+                      <% truncated_advice = truncate("#{advice.description}", :length => 200, :omission => "...") %>
+                      <%= raw truncated_advice %>
+                      <%= link_to image_tag("read_more.jpg"), advice_home_path(advice), :class => "read_more" %>
+                    </div>
 
-          <div class="item">
-            <h3>1. Barcelona Pavilion</h3>
-            <strong>
-              The German Pavilion in Barcelona, designed by Ludwig Mies van der Rohe
-              and built for the International Exposition in 1929.
-            </strong>
-            <p>
-              The Pavilion was not only a pioneer for construction forms with a fresh, disciplined
-              understanding of space, but also for modeling new opportunities for an exciting
-              association of free art and architecture.
-            </p>
-          </div>
+              <% elsif value == 2  %>
+                  <div class="advice_title"><%= link_to "#{advice.title}", advice_home_path(advice) %></div>
+                  <div class="advice_content">
+                  <% truncated_advice = truncate("#{advice.description}", :length => 200, :omission => "...") %>
+                  <%= raw truncated_advice %>
+                  <%= link_to image_tag("read_more.jpg"), advice_home_path(advice), :class => "read_more" %>
+                  </div>
 
-          <!-- ITEM 2 -->
+              <% else %>
+                  <div class="advice_title"><%= link_to "#{advice.title}", advice_home_path(advice) %></div>
+                  <div class="advice_content">
+                  <% truncated_advice = truncate("#{advice.description}", :length => 200, :omission => "...") %>
+                  <%= raw truncated_advice %>
+                  <%= link_to image_tag("read_more.jpg"), advice_home_path(advice), :class => "read_more" %>
+                  </div>
+               </div> <!-- third end -->
+              <% end %>
 
-          <div class="item">
-            <h3>2. German Pavilion</h3>
-            <strong>
-              The German Pavilion in Barcelona, designed by Ludwig Mies van der Rohe
-              and built for the International Exposition in 1929.
-            </strong>
+              <% div_value += 1 %>
 
-            <p>
-              The Pavilion was not only a pioneer for construction forms with a fresh, disciplined
-              understanding of space, but also for modeling new opportunities for an exciting
-              association of free art and architecture.
-            </p>
-          </div>
+            <% end %>
 
-          <!-- ITEM 3 -->
-
-          <div class="item">
-            <h3>3. Barcelona Pavilion</h3>
-            <strong>
-              The German Pavilion in Barcelona, designed by Ludwig Mies van der Rohe
-              and built for the International Exposition in 1929.
-            </strong>
-
-            <p>
-              The Pavilion was not only a pioneer for construction forms with a fresh, disciplined
-              understanding of space, but also for modeling new opportunities for an exciting
-              association of free art and architecture.
-            </p>
-          </div>
-
-		</div> <!-- END OF PAGE 1 -->
-
-
-        <!-- ####################################################################################################### -->
-
-
-
-        <!-- START PAGE 2 -->
-        <div>
-
-          <!-- ITEM 1 -->
-
-          <div class="item">
-            <h3>4. International Exposition</h3>
-            <strong>
-              The German Pavilion in Barcelona, designed by Ludwig Mies van der Rohe
-              and built for the International Exposition in 1929.
-            </strong>
-            <p>
-              The Pavilion was not only a pioneer for construction forms with a fresh, disciplined
-              understanding of space, but also for modeling new opportunities for an exciting
-              association of free art and architecture.
-            </p>
-          </div>
-
-          <!-- ITEM 2 -->
-
-          <div class="item">
-            <h3>5. Exposition in 1929.</h3>
-            <strong>
-              The German Pavilion in Barcelona, designed by Ludwig Mies van der Rohe
-              and built for the International Exposition in 1929.
-            </strong>
-
-            <p>
-              The Pavilion was not only a pioneer for construction forms with a fresh, disciplined
-              understanding of space, but also for modeling new opportunities for an exciting
-              association of free art and architecture.
-            </p>
-          </div>
-
-          <!-- ITEM 3 -->
-
-          <div class="item">
-            <h3>6. Ludwig Mies van der Rohe</h3>
-            <strong>
-              The German Pavilion in Barcelona, designed by Ludwig Mies van der Rohe
-              and built for the International Exposition in 1929.
-            </strong>
-
-            <p>
-              The Pavilion was not only a pioneer for construction forms with a fresh, disciplined
-              understanding of space, but also for modeling new opportunities for an exciting
-              association of free art and architecture.
-            </p>
-          </div>
-
-		</div> <!-- END OF PAGE 2 -->
-
-
-      </div>
-
-      </div>
+      </div> <!-- END ITEMS -->
 
     <!-- SCROLLABLE -->
-
 
 <% end %>
 
