@@ -43,7 +43,9 @@ $(document).ready(function() {
     $(function() {
 
 	// initialize scrollable with mousewheel support
-	$(".scrollable").scrollable({ vertical: true, mousewheel: true, easing: 'custom', speed: 700, circular: true }).play();
+	$(".scrollable").scrollable({ vertical: true, mousewheel: true, easing: 'custom', speed: 3000, circular: true });
+    $(".scrollable").autoscroll({ autoplay: true, interval: 7000 });
+
 
 });
 
