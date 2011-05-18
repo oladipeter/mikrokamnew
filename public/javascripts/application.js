@@ -46,10 +46,17 @@ $(document).ready(function() {
 	$(".scrollable").scrollable({ vertical: true, mousewheel: true, easing: 'custom', speed: 3000, circular: true });
     $(".scrollable").autoscroll({ autoplay: true, interval: 7000 });
 
+    /* TABOK ELTUNTETTESE */
+
+    $("div.close").click(function () {
+        $(this).fadeOut("slow");
+    });
 
 });
 
 });
+
+
 
 
 

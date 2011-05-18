@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
 
+  respond_to :js
   before_filter :menu_object_init, :content_object_init, :show_all_slide, :advice_object_init, :tab_object_init, :stylesheet
 
   def stylesheet
@@ -77,6 +78,13 @@ class HomeController < ApplicationController
     @slider = Slider.find(params[:id])
     @container = "slider"
     @tabs = []
+  end
+
+  # AJAX REQUEST
+
+  def active_tab_ajax
+    @tab = Tab.find(6)
+    respond_with(@tab)
   end
 
 end
