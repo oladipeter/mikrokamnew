@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa2bb426-bdf5-4e29-b511-1100ef31deb9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb" />
       <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\controllers\admin_controller.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\controllers\styles_controller.rb" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\controllers\stylesheet_controller.rb" afterPath="" />
@@ -32,12 +31,7 @@
       <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\javascripts\prototype.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\stylesheets\sequence\sequence.css" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\stylesheets\site.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sliders_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sliders_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_index_page.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_index_page.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb" afterPath="$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb" />
     </list>
     <ignored path="mikrokamnew.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +76,7 @@
       <file leaf-file-name="active_tab_ajax.js.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="48" selection-start="226" selection-end="226" vertical-scroll-proportion="0.018888889">
+            <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -574,7 +568,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="48" selection-start="226" selection-end="226" vertical-scroll-proportion="0.018888889">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
