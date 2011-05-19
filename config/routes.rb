@@ -23,6 +23,7 @@ Mikrokamnew::Application.routes.draw do
       get 'advice'
       get 'slider'
       get 'active_tab_ajax'
+      get 'all_active'
     end
   end 
 

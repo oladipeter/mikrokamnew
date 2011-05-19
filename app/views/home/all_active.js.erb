@@ -1,0 +1,12 @@
+
+<% @all_tabs.each do |tab| %>
+ $("<p><%= escape_javascript link_to tab.title, '#' %></p>").appendTo('.response_all')
+<% end %>
+
+$(".response_all").fadeIn(1000)
+
+
+
+
+
+

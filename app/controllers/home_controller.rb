@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 
-  respond_to :js
+  respond_to :html, :xml, :json
   before_filter :menu_object_init, :content_object_init, :show_all_slide, :advice_object_init, :tab_object_init, :stylesheet
 
   def stylesheet
@@ -84,7 +84,17 @@ class HomeController < ApplicationController
 
   def active_tab_ajax
     @tab = Tab.find(6)
-    respond_with(@tab)
+    respond_to do |format|
+      format.js
+    end
+
+  end
+
+  def all_active
+    @all_tabs = Tab.find(:all)
+    respond_to do |format|
+      format.js
+    end
   end
 
 end
