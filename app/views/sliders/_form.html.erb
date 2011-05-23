@@ -28,8 +28,14 @@
 
   <div class="field">
     <%= f.label :image_tag, "Kép hozzárendelés" %><br />
-    <%= f.select(:image_tag, options_for_select([['BRC-300', 1], ['EVI-HD1', 2], ['EVI-D70', 3]])) %>
-  </div>  
+    <%= f.select(:image_tag, options_for_select([['Kép-1', 1], ['Kép-2', 2], ['Kép-3', 3]])) %>
+  </div>
+
+  <%= link_to "Kép-1", "#" %><%= image_tag("kep_1.png", :class=> "form_image") %><br/>
+  <%= link_to "Kép-2", "#" %><%= image_tag("kep_2.png", :class=> "form_image")%><br/>
+  <%= link_to "Kép-3", "#" %><%= image_tag("kep_3.png", :class=> "form_image")%><br/>
+
+  <br/><br/>
 
   <div class="actions">
     <%= f.submit "Rendben!" %>

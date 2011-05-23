@@ -818,3 +818,9 @@ td.delete {
 .box {
     background-color: #ccc;
 }
+
+/* FORM IMAGE CHHOOSSEERR */
+
+.form_image {
+  width: 80px;
+}
