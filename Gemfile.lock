@@ -88,4 +88,5 @@ DEPENDENCIES
   jquery-rails (>= 0.2.6)
   paperclip (~> 2.3)
   rails (= 3.0.6)
+  rake (= 0.8.7)
   sqlite3

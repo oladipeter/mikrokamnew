@@ -5,6 +5,7 @@ gem 'rails', '3.0.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'rake', '0.8.7'
 gem 'sqlite3'
 gem 'ckeditor', '3.4.2.pre'
 gem 'paperclip', '~> 2.3'
