@@ -97,4 +97,11 @@ class HomeController < ApplicationController
     end
   end
 
+  def service
+    @service_tab = Tab.find(params[:id])
+    respond_to do |format|
+      format.xml { render :xml => @service_tab }
+    end
+  end
+
 end
