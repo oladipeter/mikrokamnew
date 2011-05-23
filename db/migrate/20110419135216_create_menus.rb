@@ -6,6 +6,10 @@ class CreateMenus < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    # Insert default menu, content_id => 1, connect with content 1.
+    Menu.create :title => "Default menu", :content_id => "1"
+
   end
 
   def self.down

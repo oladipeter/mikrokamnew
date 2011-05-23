@@ -1,40 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/db/migrate/20110419135215_create_contents.rb" line="8" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aa2bb426-bdf5-4e29-b511-1100ef31deb9" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\controllers\admin_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\controllers\styles_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\controllers\stylesheet_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\helpers\styles_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\helpers\stylesheet_helper.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\models\styles.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\admin\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\home\show_menu_content.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\sliders\show_all_slide.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\styles\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\styles\new.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\styles\update.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\app\views\stylesheet\index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\db\migrate\20110504130641_create_stylesheets.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\db\migrate\20110505123925_create_styles.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\kep_1.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\images\kep_1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\index.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\javascripts\controls.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\javascripts\dragdrop.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\javascripts\effects.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\javascripts\prototype.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\stylesheets\sequence\sequence.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\mikrokamnew\public\stylesheets\site.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mikrokamnew.iml" afterPath="$PROJECT_DIR$/.idea/mikrokamnew.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/infos_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/infos_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/infos/index.html.erb" afterPath="$PROJECT_DIR$/app/views/infos/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/shared/_index_page.html.erb" afterPath="$PROJECT_DIR$/app/views/shared/_index_page.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110419135215_create_contents.rb" afterPath="$PROJECT_DIR$/db/migrate/20110419135215_create_contents.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110419135216_create_menus.rb" afterPath="$PROJECT_DIR$/db/migrate/20110419135216_create_menus.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20110420085921_create_sliders.rb" afterPath="$PROJECT_DIR$/db/migrate/20110420085921_create_sliders.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/default/default.css" afterPath="$PROJECT_DIR$/public/stylesheets/default/default.css" />
     </list>
     <ignored path="mikrokamnew.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,64 +39,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rakefile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Rakefile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110509084928_create_stylesheets.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110509084928_create_stylesheets.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="112" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110511091633_create_infos.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110511091633_create_infos.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110511092903_add_info_id_to_tabs.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110511092903_add_info_id_to_tabs.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110513103111_add_url_to_contents.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110513103111_add_url_to_contents.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20110513131329_add_active_flag_to_tab.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20110513131329_add_active_flag_to_tab.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="121" column="154" selection-start="3794" selection-end="3794" vertical-scroll-proportion="0.2891986">
               <folding />
             </state>
           </provider>
@@ -135,22 +62,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/advice.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/advices_controller.rb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/default/default.css" />
-        <option value="$PROJECT_DIR$/app/controllers/sliders_controller.rb" />
-        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/shared/_index_page.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/home_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/home/all_active.json.erb" />
         <option value="$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb" />
         <option value="$PROJECT_DIR$/app/views/home/all_active.js.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/Rakefile" />
+        <option value="$PROJECT_DIR$/db/migrate/20110419135215_create_contents.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110419135216_create_menus.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110420085921_create_sliders.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20110420093551_add_image_column_to_slider.rb" />
+        <option value="$PROJECT_DIR$/app/views/infos/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/infos_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_index_page.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -180,8 +107,9 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,7 +138,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,17 +156,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mikrokamnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mikrokamnew" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,6 +251,13 @@
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="test" type="RakeRunConfigurationType" factoryName="Rake">
@@ -414,14 +370,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24719702" sideWeight="0.67098165" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25040042" sideWeight="0.67098165" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -467,104 +423,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/infos_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110419121947_devise_create_admins.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="55" selection-start="485" selection-end="485" vertical-scroll-proportion="0.4911111" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/contents/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="58" selection-start="330" selection-end="330" vertical-scroll-proportion="0.3112128" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="19" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.7544444" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="23" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/menus_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="14" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/active_tab_ajax.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="281" selection-end="281" vertical-scroll-proportion="0.094444446">
+        <state line="8" column="75" selection-start="268" selection-end="268" vertical-scroll-proportion="0.15542857">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/all_active.js.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20110420085921_create_sliders.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="216" selection-end="216" vertical-scroll-proportion="0.15111111">
+        <state line="12" column="73" selection-start="438" selection-end="438" vertical-scroll-proportion="0.23314285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="35" selection-start="135" selection-end="135" vertical-scroll-proportion="-2.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admins/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="56" selection-start="2615" selection-end="2615" vertical-scroll-proportion="-12.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/infos/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="11" selection-start="11" selection-end="11" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/infos/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/infos/show_tabs.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/infos/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="62" selection-start="356" selection-end="356" vertical-scroll-proportion="0.3112128">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/infos/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="223" selection-end="223" vertical-scroll-proportion="-2.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/infos_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="7" selection-start="1030" selection-end="1030" vertical-scroll-proportion="0.26333332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/stylesheet_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/menus_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="59" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.60444444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/contents_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="57" selection-end="57" vertical-scroll-proportion="-0.18888889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="58" selection-start="749" selection-end="749" vertical-scroll-proportion="-0.56777775">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_index_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="56" selection-start="5026" selection-end="5026" vertical-scroll-proportion="0.8443936">
+        <state line="70" column="20" selection-start="1822" selection-end="1822" vertical-scroll-proportion="-0.51716244">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="159" selection-start="765" selection-end="765" vertical-scroll-proportion="0.24555555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Rakefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110509084928_create_stylesheets.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="112" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110511091633_create_infos.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110511092903_add_info_id_to_tabs.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110513103111_add_url_to_contents.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20110513131329_add_active_flag_to_tab.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="121" column="154" selection-start="3794" selection-end="3794" vertical-scroll-proportion="0.2891986">
           <folding />
         </state>
       </provider>

@@ -84,6 +84,18 @@ ActiveRecord::Schema.define(:version => 20110513131329) do
     t.string   "short_description"
   end
 
+  create_table "styles", :force => true do |t|
+    t.string  "name"
+    t.string  "name_value"
+    t.integer "active",     :default => 0
+  end
+
+  create_table "stylesheets", :force => true do |t|
+    t.string  "name"
+    t.string  "name_value"
+    t.integer "active",     :default => 0
+  end
+
   create_table "tabs", :force => true do |t|
     t.string   "title"
     t.text     "description"

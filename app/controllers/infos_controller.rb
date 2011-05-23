@@ -50,16 +50,11 @@ class InfosController < ApplicationController
   # POST /infos.xml
   def create
     @info = Info.new(params[:info])
-
-    respond_to do |format|
       if @info.save
-        format.html { redirect_to(@info, :notice => 'Info was successfully created.') }
-        format.xml  { render :xml => @info, :status => :created, :location => @info }
+        redirect_to infos_path, :notice => 'Info was successfully created.'
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @info.errors, :status => :unprocessable_entity }
+        render :action => "new"
       end
-    end
   end
 
   # PUT /infos/1

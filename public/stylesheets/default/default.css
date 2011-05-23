@@ -410,6 +410,10 @@ ul.services {
     background-color: #fff;
 }
 
+#block_8 .text {
+  border: none;
+}
+
 .footer {
     text-align: center;
 }
