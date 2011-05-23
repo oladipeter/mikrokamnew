@@ -335,6 +335,7 @@ ul.services {
 .advice_title a {
     color: #333!important;
     text-align: left;
+    font-weight: normal;
 }
 
 .advice_content {
