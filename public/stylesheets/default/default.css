@@ -279,6 +279,11 @@ ul.services {
     font-size: 15px;
 }
 
+ul.services a {
+  color: #015270!important;
+  font-weight: normal!important;
+}
+
 /* BLOCK 6 ------------------------------------------------------------------ */
 
 #block_6 h1 {
