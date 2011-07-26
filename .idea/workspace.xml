@@ -4,21 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/db/migrate/20110419135215_create_contents.rb" line="8" mnemonic="7" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa2bb426-bdf5-4e29-b511-1100ef31deb9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mikrokamnew.iml" afterPath="$PROJECT_DIR$/.idea/mikrokamnew.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/big_pic_background.jpg" afterPath="$PROJECT_DIR$/public/images/big_pic_background.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/kep_1.png" afterPath="$PROJECT_DIR$/public/images/kep_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/kep_2.png" afterPath="$PROJECT_DIR$/public/images/kep_2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/images/kep_3.png" afterPath="$PROJECT_DIR$/public/images/kep_3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/default/images/big_pic_background.jpg" afterPath="$PROJECT_DIR$/public/stylesheets/default/images/big_pic_background.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/default/images/kep_1.png" afterPath="$PROJECT_DIR$/public/stylesheets/default/images/kep_1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/default/images/kep_3.png" afterPath="$PROJECT_DIR$/public/stylesheets/default/images/kep_3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nbproject/private/private.xml" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/default/default.css" afterPath="$PROJECT_DIR$/public/stylesheets/default/default.css" />
-    </list>
+    <list default="true" id="aa2bb426-bdf5-4e29-b511-1100ef31deb9" name="Default" comment="" />
     <ignored path="mikrokamnew.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
