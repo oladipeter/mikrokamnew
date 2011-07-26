@@ -663,6 +663,7 @@ ul.tabs a.xl.current {
 .slide_short_description {
     position: relative;
     top: 20px;
+    left: -20px;
 }
 
 .slide_short_description {
@@ -678,7 +679,7 @@ ul.tabs a.xl.current {
     top: 0;
     left: 0;
     margin: 7px;
-    padding: 0px 30px 15px 0px;
+    padding: 0px 50px 15px 0px;
     height: 120px;
     font-size: 14px;
 }
@@ -688,7 +689,10 @@ ul.tabs a.xl.current {
     height: 225px;
     display: block;
     float: left;
-    margin-right: 20px;
+    position: relative;
+    top: 10px;
+    left: -10px;
+
 }
 
 /* Fejlec */
