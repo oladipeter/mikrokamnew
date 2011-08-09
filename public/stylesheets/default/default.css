@@ -350,11 +350,8 @@ ul.services a {
 .advice_content {
     padding-right: 15px;
     margin-bottom: 20px;
-    color: #666;
-}
 
-#facebook {
-  margin-top: 20px;
+    color: #666;
 }
 
 /* BLOCK 7 ------------------------------------------------------------------ */
@@ -886,9 +883,10 @@ span.delete {
 	overflow:hidden;
 
 	/* vertical scrollables have typically larger height than width but not now */
-	height: 480px;
+	height: 440px;
 	width: 280px;
     text-align: justify;
+  margin-bottom: 20px;
 }
 
 /* root element for scrollable items */
